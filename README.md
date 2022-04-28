@@ -35,25 +35,30 @@
     <td>姓名</td>
     <td>學號</td>
     <td>帳號</td>
+    <td>Issues</td>
   </tr>
   <tr>
     <td>蔡方慈</td>
     <td>D0843530</td>
     <td>fcu-d0843530</td>
+    <td></td>
   </tr>
   <tr>
     <td>陳怡秀</td>
     <td>D0845176</td>
     <td>D0845176</td>
+    <td></td>
   </tr>
   <tr>
     <td>曾凱翎</td>
     <td>D0813263</td>
     <td>fcu-d0813263</td>
+    <td></td>
   </tr>
   <tr>
     <td>鄧尊尼</td>
     <td>D0809324</td>
     <td>fcu-d0809324</td>
+    <td></td>
   </tr>
 </table>
