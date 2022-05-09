@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class SecondActivity extends AppCompatActivity {
+public class FacebookActivity extends AppCompatActivity {
 
     ImageView imageView;
     TextView name;
@@ -25,7 +25,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_fb);
 
         imageView = findViewById(R.id.imageview);
         name = findViewById(R.id.name);
@@ -57,7 +57,7 @@ public class SecondActivity extends AppCompatActivity {
 
         logOutBtn.setOnClickListener(view -> {
             LoginManager.getInstance().logOut();
-            startActivity(new Intent(SecondActivity.this,MainActivity.class));
+            startActivity(new Intent(FacebookActivity.this,MainActivity.class));
             finish();
         });
     }
