@@ -1,5 +1,5 @@
 package com.example.myloginapp;
 
-public class ManagerActivity {
+public class LoginActivity {
 
 }

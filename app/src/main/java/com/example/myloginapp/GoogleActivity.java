@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -17,7 +16,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-public class ThirdActivity extends AppCompatActivity {
+public class GoogleActivity extends AppCompatActivity {
 
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
@@ -27,7 +26,7 @@ public class ThirdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_google);
 
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
@@ -56,7 +55,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 finish();
-                startActivity(new Intent(ThirdActivity.this,MainActivity.class));
+                startActivity(new Intent(GoogleActivity.this,MainActivity.class));
             }
         });
     }

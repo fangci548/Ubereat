@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         if(accessToken != null && !accessToken.isExpired()){
-            startActivity(new Intent(MainActivity.this,SecondActivity.class));
+            startActivity(new Intent(MainActivity.this, FacebookActivity.class));
             finish();
         }
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
-                        startActivity(new Intent(MainActivity.this,SecondActivity.class));
+                        startActivity(new Intent(MainActivity.this, FacebookActivity.class));
                         finish();
                     }
 
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     void navigateToThirdActivity(){
         finish();
-        Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+        Intent intent = new Intent(MainActivity.this, GoogleActivity.class);
         startActivity(intent);
     }
 }
