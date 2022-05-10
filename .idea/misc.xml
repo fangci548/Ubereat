@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_customeraccount.xml" value="0.17916666666666667" />
-        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_second.xml" value="0.17916666666666667" />
-        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_third.xml" value="0.17916666666666667" />
-        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/storeowner_itemlist.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_second.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_store_owner.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_third.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/storeowner_itemlist.xml" value="0.14666666666666667" />
+        <entry key="app/src/main/res/layout/activity_customeraccount.xml" value="0.255248802362846" />
+        <entry key="app/src/main/res/layout/activity_fb.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_google.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_manager.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_promo.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_store_owner.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_storeaccount.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/storeowner_itemlist.xml" value="0.15670289855072464" />
       </map>
     </option>
   </component>
