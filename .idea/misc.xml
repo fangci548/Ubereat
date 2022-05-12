@@ -15,8 +15,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/activity_manager.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/activity_promo.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_store_ordercomplete.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_store_orderdet.xml" value="0.2516110977744863" />
         <entry key="app/src/main/res/layout/activity_store_owner.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/activity_storeaccount.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/store_orderdetail_layout.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/storeowner_itemlist.xml" value="0.15670289855072464" />
       </map>
     </option>
