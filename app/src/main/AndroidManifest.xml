@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".StoreProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".StoreOrderdetActivity"
             android:exported="false" />
         <activity

@@ -9,6 +9,9 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_store_owner.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_third.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/storeowner_itemlist.xml" value="0.14666666666666667" />
+        <entry key="app/src/main/res/drawable/background_color.xml" value="0.213" />
+        <entry key="app/src/main/res/drawable/mybuttom.xml" value="0.213" />
+        <entry key="app/src/main/res/drawable/mybutton.xml" value="0.213" />
         <entry key="app/src/main/res/layout/activity_customeraccount.xml" value="0.255248802362846" />
         <entry key="app/src/main/res/layout/activity_fb.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/activity_google.xml" value="0.15670289855072464" />
@@ -16,10 +19,12 @@
         <entry key="app/src/main/res/layout/activity_manager.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/activity_promo.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/activity_store_ordercomplete.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_store_orderdet.xml" value="0.2516110977744863" />
+        <entry key="app/src/main/res/layout/activity_store_orderdet.xml" value="0.2627105712890625" />
         <entry key="app/src/main/res/layout/activity_store_owner.xml" value="0.15670289855072464" />
+        <entry key="app/src/main/res/layout/activity_store_product.xml" value="0.21557971014492755" />
         <entry key="app/src/main/res/layout/activity_storeaccount.xml" value="0.15670289855072464" />
         <entry key="app/src/main/res/layout/store_orderdetail_layout.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/store_product_layout.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/storeowner_itemlist.xml" value="0.15670289855072464" />
       </map>
     </option>
