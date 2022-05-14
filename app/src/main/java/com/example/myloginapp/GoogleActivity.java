@@ -55,7 +55,7 @@ public class GoogleActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 finish();
-                startActivity(new Intent(GoogleActivity.this,MainActivity.class));
+                startActivity(new Intent(GoogleActivity.this, LoginActivity.class));
             }
         });
     }

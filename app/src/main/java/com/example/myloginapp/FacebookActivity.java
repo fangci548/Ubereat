@@ -57,7 +57,7 @@ public class FacebookActivity extends AppCompatActivity {
 
         logOutBtn.setOnClickListener(view -> {
             LoginManager.getInstance().logOut();
-            startActivity(new Intent(FacebookActivity.this,MainActivity.class));
+            startActivity(new Intent(FacebookActivity.this, LoginActivity.class));
             finish();
         });
     }
