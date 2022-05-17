@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "531557294188",
+    "firebase_url": "https://food-40881-default-rtdb.firebaseio.com",
+    "project_id": "food-40881",
+    "storage_bucket": "food-40881.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531557294188:android:a689fd9a5ddbe44bc2b849",
+        "android_client_info": {
+          "package_name": "com.example.myloginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531557294188-fg0t87vmcbfh5l5tguuledf9djgpregj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOCJoAUNgUU2PQJoaO3m5wqVibr7LLZaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531557294188-fg0t87vmcbfh5l5tguuledf9djgpregj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
