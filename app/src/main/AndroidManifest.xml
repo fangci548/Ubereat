@@ -13,19 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
-            android:name=".StoreOrderAcceptActivity"
+            android:name=".CustomMealActivity"
             android:exported="false" />
         <activity
-            android:name=".StoreOrderWaitActivity"
+            android:name=".CustomItemList"
             android:exported="false" />
         <activity
-            android:name=".StoreOrderWaitDetActivity"
-            android:exported="true" />
-        <activity
-            android:name=".StoreOrderAcceptDetActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreOrderCompleteActivity"
+            android:name=".StoreOrdercompleteActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
@@ -35,13 +29,13 @@
             android:exported="false" />
         <activity
             android:name=".StoreProductActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
-            android:name=".StoreOrderCompleteDetActivity"
-            android:exported="true" />
+            android:name=".StoreOrderdetActivity"
+            android:exported="false" />
         <activity
             android:name=".CustomeraccountActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".StoreOwnerActivity"
             android:exported="false" />
