@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myloginapp" >
+    package="com.example.myloginapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,9 +11,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyLoginApp" >
+        android:theme="@style/Theme.MyLoginApp">
         <activity
-            android:name=".StoreOrdercompleteActivity"
+            android:name=".StoreOrderAcceptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOrderWaitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOrderWaitDetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StoreOrderAcceptDetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOrderCompleteActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
@@ -25,8 +37,8 @@
             android:name=".StoreProductActivity"
             android:exported="true" />
         <activity
-            android:name=".StoreOrderdetActivity"
-            android:exported="false" />
+            android:name=".StoreOrderCompleteDetActivity"
+            android:exported="true" />
         <activity
             android:name=".CustomeraccountActivity"
             android:exported="true" />
@@ -35,7 +47,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

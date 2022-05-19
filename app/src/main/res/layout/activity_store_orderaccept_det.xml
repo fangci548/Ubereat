@@ -11,7 +11,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_back" />
@@ -71,7 +71,7 @@
     <ListView
         android:id="@+id/orderdet_lv"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="250dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginRight="16dp"
@@ -149,8 +149,8 @@
 
     <Button
         android:id="@+id/orderdet_button"
-        android:layout_width="130dp"
-        android:layout_height="70dp"
+        android:layout_width="125dp"
+        android:layout_height="65dp"
         android:layout_marginLeft="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/mybutton"
@@ -158,5 +158,18 @@
         android:text="餐點送出"
         android:textColor="#5791E1"
         android:textSize="18sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#F0F0F0"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/store_menu" />
 
 </LinearLayout>

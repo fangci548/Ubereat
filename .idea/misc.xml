@@ -28,10 +28,19 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_third.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/storeowner_itemlist.xml" value="0.14666666666666667" />
         <entry key="app/src/main/res/layout/activity_customeraccount.xml" value="0.2978912353515625" />
+        <entry key="app/src/main/res/layout/activity_promo.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_store_order_accept.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_store_order_complete.xml" value="0.14629629629629629" />
+        <entry key="app/src/main/res/layout/activity_store_order_complete_det.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_store_order_wait.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_store_order_wait_det.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_store_ordercomplete.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/activity_store_orderdet.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/activity_store_owner.xml" value="0.29890187581380206" />
         <entry key="app/src/main/res/layout/activity_store_product.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/activity_storeaccount.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/store_orderdetail_layout.xml" value="0.18575286865234375" />
         <entry key="app/src/main/res/layout/store_product_layout.xml" value="0.18840579710144928" />
         <entry key="app/src/main/res/menu/customer_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.140625" />
