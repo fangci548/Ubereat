@@ -9,13 +9,13 @@
     <LinearLayout
         android:id="@+id/custo_layout1"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="101dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/custo_img"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_margin="25dp"
             android:layout_marginLeft="16dp"
             app:srcCompat="@drawable/icon_headimg" />
@@ -23,7 +23,7 @@
         <TextView
             android:id="@+id/custo_name"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="30dp"
             android:text="Ella Lin"
@@ -37,6 +37,7 @@
         android:layout_width="375dp"
         android:layout_height="2dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="16dp"
         android:background="#C2C2C2" />
 
@@ -44,8 +45,8 @@
         android:id="@+id/cost_layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -78,8 +79,8 @@
         android:id="@+id/custo_layout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -112,8 +113,8 @@
         android:id="@+id/custo_layout4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -146,8 +147,8 @@
         android:id="@+id/custo_layout5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -180,8 +181,8 @@
         android:id="@+id/custo_layout6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -214,8 +215,8 @@
         android:id="@+id/custo_layout7"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -248,8 +249,8 @@
         android:id="@+id/custo_layout8"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -282,8 +283,8 @@
         android:id="@+id/custo_layout9"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -303,6 +304,19 @@
             android:textColor="#000000"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#F0F0F0"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/store_menu" />
 
 
 </LinearLayout>

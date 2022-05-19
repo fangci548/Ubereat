@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="產品"
+        android:id="@+id/product"
+        android:icon="@drawable/store_menu_product"
+
+        />
+    <item android:title="首頁"
+        android:icon="@drawable/store_menu_frontpage"
+        android:id="@+id/frontpage"
+        />
+    <item android:title="帳戶"
+        android:id="@+id/account"
+        android:icon="@drawable/store_menu_account"
+        />
+</menu>
