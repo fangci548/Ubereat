@@ -60,8 +60,8 @@ Issue
     <td>D0813263</td>
     <td>fcu-d0813263</td>
     <td>#5</td>
-    <td>#</td>
-    <td>#</td>
+    <td>#6</td>
+    <td>#2</td>
   </tr>
   <tr>
     <td>鄧尊尼</td>
