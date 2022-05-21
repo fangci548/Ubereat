@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity {
 
     public static boolean VALID_USER = false;
+    public static final String ALBUM_NO = "album_no";
+
     GridView gridview;
 
     String[] shopName = {"大苑子","麥當勞","必勝客","肯德基","可不可成熟紅茶","繼光香香雞"};
@@ -34,7 +37,15 @@ public class MainActivity extends AppCompatActivity {
             MainAdapter adapter = new MainAdapter(MainActivity.this,shopName,numberImage,fee,time,star);
             gridview.setAdapter(adapter);
         }
+
+        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, CustomMealActivity.class);
+                intent.putExtra(ALBUM_NO, i);
+                startActivity(intent);
+            }
+        });
     }
-
-
 }
