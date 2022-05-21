@@ -36,6 +36,8 @@ Issue
     <td>學號</td>
     <td>帳號</td>
     <td>05-03</td>
+    <td>05-10</td>
+    <td>05-12</td>
     <td>05-17</td>
     <td>05-19</td>
   </tr>
@@ -44,6 +46,8 @@ Issue
     <td>D0843530</td>
     <td>fcu-d0843530</td>
     <td>#1</td>
+    <td>#</td>
+    <td>#</td>
     <td>#7</td>
     <td>#10</td>
   </tr>
@@ -52,14 +56,18 @@ Issue
     <td>D0845176</td>
     <td>D0845176</td>
     <td>#3</td>
-    <td>#8,#9,#10</td>
-    <td>#11,#12</td>
+    <td>#8</td>
+    <td>#9</td>
+    <td>#10,#11</td>
+    <td>#12</td>
   </tr>
   <tr>
     <td>曾凱翎</td>
     <td>D0813263</td>
     <td>fcu-d0813263</td>
     <td>#5</td>
+    <td>#</td>
+    <td>#</td>
     <td>#6</td>
     <td>#2</td>
   </tr>
@@ -68,6 +76,8 @@ Issue
     <td>D0809324</td>
     <td>fcu-d0809324</td>
     <td>#4</td>
+    <td>#</td>
+    <td>#</td>
     <td>#</td>
     <td>#</td>
   </tr>
