@@ -44,8 +44,8 @@ Issue
     <td>D0843530</td>
     <td>fcu-d0843530</td>
     <td>#1</td>
-    <td>#</td>
-    <td>#</td>
+    <td>#7</td>
+    <td>#10</td>
   </tr>
   <tr>
     <td>陳怡秀</td>
