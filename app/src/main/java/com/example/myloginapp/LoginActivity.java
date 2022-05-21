@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,6 +21,9 @@ public class LoginActivity extends AppCompatActivity
     private EditText etEmail;//d0813263@o365.fcu.edu.tw
     private EditText etPassword;//abc1234
     FirebaseAuth firebaseAuth;
+    Intent intent;
+    String role;
+    TextView tv_role;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,10 @@ public class LoginActivity extends AppCompatActivity
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
         firebaseAuth = FirebaseAuth.getInstance();
+        intent = getIntent();
+        role = intent.getStringExtra("Role");
+        tv_role = findViewById(R.id.tv_role);
+        tv_role.setText(role);
     }
 
     public void onLogin(View view) {
@@ -50,7 +58,16 @@ public class LoginActivity extends AppCompatActivity
             Toast.makeText(this, "登入成功", Toast.LENGTH_LONG).show();
             MainActivity.VALID_USER = true;
             Intent intent = new Intent();
-            intent.setClass(this, MainActivity.class);
+            if(role.equals("customer")){
+                intent.setClass(this, MainActivity.class);
+            }
+            else if (role.equals("store")){ //!未改
+                intent.setClass(this, MainActivity.class);
+            }
+            else{ //deliver !未改
+                intent.setClass(this, MainActivity.class);
+            }
+            //intent.setClass(this, MainActivity.class);
             startActivity(intent);
             finish();
         } else {

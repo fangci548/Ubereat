@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!VALID_USER) {
             Intent intent = new Intent();
-            intent.setClass(this, LoginActivity.class);
+            intent.setClass(this, RoleChose.class);
             startActivity(intent);
         } else {
             gridview = findViewById(R.id.gridview);

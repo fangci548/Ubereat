@@ -9,6 +9,6 @@ public class StoreOwnerActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.owner_main);
+		setContentView(R.layout.store_main);
 	}
 }
