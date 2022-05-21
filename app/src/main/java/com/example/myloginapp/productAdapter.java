@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -33,7 +32,7 @@ public class productAdapter extends ArrayAdapter<product> {
         RelativeLayout itemLayout = null;
 
         if (convertView == null) {
-            itemLayout = (RelativeLayout) inflater.inflate(R.layout.custom_shop_item, null);
+            itemLayout = (RelativeLayout) inflater.inflate(R.layout.customer_shop_item, null);
         } else {
             itemLayout = (RelativeLayout) convertView;
         }

@@ -14,7 +14,7 @@ public class CustomMealActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meal_activity);
+        setContentView(R.layout.customer_shoplist);
 
         listView = findViewById(R.id.listview);
 
@@ -24,7 +24,7 @@ public class CustomMealActivity extends AppCompatActivity {
         arrayList.add(new product(R.drawable.pizzahut,"豬肉蛋堡","$50"));
         arrayList.add(new product(R.drawable.maxico,"薯條","$40"));
 
-        productAdapter productAdapter = new productAdapter(this,R.layout.custom_shop,arrayList);
+        productAdapter productAdapter = new productAdapter(this,R.layout.customer_shop,arrayList);
 
         listView.setAdapter(productAdapter);
     }

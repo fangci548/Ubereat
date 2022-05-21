@@ -49,7 +49,7 @@ public class MainAdapter extends BaseAdapter {
             inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         }
         if(convertView == null){
-            convertView = inflater.inflate(R.layout.custom_shop,null);
+            convertView = inflater.inflate(R.layout.customer_shop,null);
         }
         ImageView imageView = convertView.findViewById(R.id.iv_photo);
         TextView shop_name = convertView.findViewById(R.id.shop_name);
