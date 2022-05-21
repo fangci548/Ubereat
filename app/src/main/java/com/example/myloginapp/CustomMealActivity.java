@@ -18,13 +18,13 @@ public class CustomMealActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listview);
 
-        ArrayList<product> arrayList = new ArrayList<>();
+        ArrayList<CustomShopItem> arrayList = new ArrayList<>();
 
-        arrayList.add(new product(R.drawable.food,"蛋餅","$30"));
-        arrayList.add(new product(R.drawable.pizzahut,"豬肉蛋堡","$50"));
-        arrayList.add(new product(R.drawable.maxico,"薯條","$40"));
+        arrayList.add(new CustomShopItem(R.drawable.food,"蛋餅","$30"));
+        arrayList.add(new CustomShopItem(R.drawable.food,"豬肉蛋堡","$50"));
+        arrayList.add(new CustomShopItem(R.drawable.maxico,"薯條","$40"));
 
-        productAdapter productAdapter = new productAdapter(this,R.layout.customer_shop,arrayList);
+        CustomShopItemAdapter productAdapter = new CustomShopItemAdapter(this,R.layout.customer_shop,arrayList);
 
         listView.setAdapter(productAdapter);
     }

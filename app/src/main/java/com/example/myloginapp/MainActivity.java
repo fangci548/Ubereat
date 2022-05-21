@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customer_main);
 
-        if (!VALID_USER) {
-            Intent intent = new Intent();
-            intent.setClass(this, LoginActivity.class);
-            startActivity(intent);
-        } else {
+//        if (!VALID_USER) {
+//            Intent intent = new Intent();
+//            intent.setClass(this, LoginActivity.class);
+//            startActivity(intent);
+//        } else {
             gridview = findViewById(R.id.gridview);
 
             MainAdapter adapter = new MainAdapter(MainActivity.this,shopName,numberImage,fee,time,star);
             gridview.setAdapter(adapter);
-        }
+//        }
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
