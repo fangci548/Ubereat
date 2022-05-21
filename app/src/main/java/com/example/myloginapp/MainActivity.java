@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
 
     String[] shopName = {"大苑子","麥當勞","必勝客","肯德基","可不可成熟紅茶","繼光香香雞"};
     int [] numberImage = {R.drawable.dayung,R.drawable.mcdonald,R.drawable.pizzahut,R.drawable.kfc,R.drawable.kebuketea,R.drawable.jgchicken};
+    String[] fee = {"15.00","35.00","15.00","10.00","20.00","15.00"};
+    String[] time = {"5-10","20-30","10-15","5-10","25-30","15-25"};
+    String[] star = {"4.8","4.6","4.5","4.6","4.9","4.8"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             gridview = findViewById(R.id.gridview);
 
-            MainAdapter adapter = new MainAdapter(MainActivity.this,shopName,numberImage);
+            MainAdapter adapter = new MainAdapter(MainActivity.this,shopName,numberImage,fee,time,star);
             gridview.setAdapter(adapter);
         }
     }
+
+
 }

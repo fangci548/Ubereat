@@ -19,9 +19,6 @@
             android:name=".CustomItemList"
             android:exported="false" />
         <activity
-            android:name=".StoreOrdercompleteActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
@@ -29,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".StoreProductActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreOrderdetActivity"
             android:exported="false" />
         <activity
             android:name=".CustomeraccountActivity"

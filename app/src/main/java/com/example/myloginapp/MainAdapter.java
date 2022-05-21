@@ -14,11 +14,18 @@ public class MainAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private String[] shopName;
     private int[] shopImage;
+    private String[] fee;
+    private String[] time;
+    private String[] shopStar;
 
-    public MainAdapter(Context context, String[] shopName, int[] shopImage) {
+
+    public MainAdapter(Context context, String[] shopName, int[] shopImage, String[] fee, String[] time, String[] star) {
         this.context = context;
         this.shopName = shopName;
         this.shopImage = shopImage;
+        this.fee = fee;
+        this.time = time;
+        this.shopStar = star;
     }
 
     @Override
@@ -45,10 +52,17 @@ public class MainAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.custom_shop,null);
         }
         ImageView imageView = convertView.findViewById(R.id.iv_photo);
-        TextView textView = convertView.findViewById(R.id.shop_name);
+        TextView shop_name = convertView.findViewById(R.id.shop_name);
+        TextView shop_fee = convertView.findViewById(R.id.delivery_fee);
+        TextView shop_time = convertView.findViewById(R.id.delivery_time);
+        TextView shop_star = convertView.findViewById(R.id.shop_star);
+
 
         imageView.setImageResource(shopImage[position]);
-        textView.setText(shopName[position]);
+        shop_name.setText(shopName[position]);
+        shop_fee.setText(fee[position]);
+        shop_time.setText(time[position]);
+        shop_star.setText(shopStar[position]);
         return convertView;
     }
 }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
+    android:paddingTop="20dp"
     android:onClick="jump"
     android:orientation="vertical"
     tools:context=".CustomItemList">
@@ -32,11 +32,10 @@
             android:text="TextView"
             android:textSize="24sp" />
 
-        <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@android:drawable/btn_star_big_on"
-            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on" />
 
         <TextView
             android:id="@+id/shop_star"
@@ -56,7 +55,7 @@
 
         <TextView
             android:id="@+id/delivery_fee"
-            android:layout_width="60dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="Fee"
