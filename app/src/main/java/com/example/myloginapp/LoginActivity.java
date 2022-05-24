@@ -18,8 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity
         implements OnCompleteListener<AuthResult> {
 
-    private EditText etEmail;//d0813263@o365.fcu.edu.tw
-    private EditText etPassword;//abc1234
+    private EditText etEmail;//abc@gmail.com
+    private EditText etPassword;//123456
     FirebaseAuth firebaseAuth;
     Intent intent;
     String role;
@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity
                 intent.setClass(this, MainActivity.class);
             }
             else if (role.equals("store")){ //!未改
-                intent.setClass(this, MainActivity.class);
+                intent.setClass(this, StoreProductActivity.class);
             }
             else{ //deliver !未改
                 intent.setClass(this, MainActivity.class);

@@ -3,48 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myloginapp">
 
-  <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-  <application
-      android:allowBackup="true"
-      android:icon="@mipmap/ic_launcher"
-      android:label="@string/app_name"
-      android:roundIcon="@mipmap/ic_launcher_round"
-      android:supportsRtl="true"
-      android:theme="@style/Theme.MyLoginApp">
-    <activity
-        android:name=".MainActivity"
-        android:exported="false" />
-    <activity
-        android:name=".CustomMealActivity"
-        android:exported="false" />
-    <activity
-        android:name=".CustomItemList"
-        android:exported="false" />
-    <activity
-        android:name=".RegisterActivity"
-        android:exported="false" />
-    <activity
-        android:name=".LoginActivity"
-        android:exported="false" />
-    <activity
-        android:name=".StoreProductActivity"
-        android:exported="false" />
-    <activity
-        android:name=".CustomeraccountActivity"
-        android:exported="false" />
-    <activity
-        android:name=".StoreOwnerActivity"
-        android:exported="false" />
-    <activity
-        android:name=".RoleChose"
-        android:exported="true">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyLoginApp">
+        <activity
+            android:name=".CustomItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomMealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomItemList"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoleChose"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-  </application>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

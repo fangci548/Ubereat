@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_custom_item_detail.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_store_order_complete_det.xml" value="0.15925925925925927" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_store_orderaccept_det.xml" value="0.15925925925925927" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_store_product.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/custom_item_detail.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/customer_shop_item.xml" value="0.15925925925925927" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/store_orderdetail_layout.xml" value="0.15925925925925927" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_meal_activity.xml" value="0.1" />
