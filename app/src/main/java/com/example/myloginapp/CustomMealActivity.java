@@ -2,7 +2,10 @@ package com.example.myloginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -10,6 +13,7 @@ import java.util.ArrayList;
 public class CustomMealActivity extends AppCompatActivity {
 
     ListView listView;
+    public static final String ALBUM_NO = "album_no";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +31,15 @@ public class CustomMealActivity extends AppCompatActivity {
         CustomShopItemAdapter productAdapter = new CustomShopItemAdapter(this,R.layout.customer_shop,arrayList);
 
         listView.setAdapter(productAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent();
+                intent.setClass(CustomMealActivity.this, CustomItemDetailActivity.class);
+                intent.putExtra(ALBUM_NO, i);
+                startActivity(intent);
+            }
+        });
     }
 }

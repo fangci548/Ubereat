@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#5791E1"
+    android:background="@drawable/bg"
     tools:context="RoleChose">
 
   <Button
       android:id="@+id/bt_customer"
-      android:layout_width="wrap_content"
+      android:layout_width="150dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="50dp"
       android:backgroundTint="#5791E1"
@@ -23,7 +23,7 @@
 
   <Button
       android:id="@+id/bt_deliver"
-      android:layout_width="wrap_content"
+      android:layout_width="150dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="40dp"
       android:backgroundTint="#5791E1"
@@ -37,7 +37,7 @@
 
   <Button
       android:id="@+id/bt_store"
-      android:layout_width="wrap_content"
+      android:layout_width="150dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="50dp"
       android:backgroundTint="#5791E1"
@@ -53,10 +53,12 @@
       android:id="@+id/textView4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="96dp"
+      android:layout_marginTop="180dp"
       android:text="請選擇角色："
-      android:textSize="30sp"
+      android:textColor="@color/black"
+      android:textSize="35sp"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.502"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

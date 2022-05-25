@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".CustomShopCartActivity"
+            android:exported="false" />
+        <activity
             android:name=".CustomItemDetailActivity"
             android:exported="false" />
         <activity
