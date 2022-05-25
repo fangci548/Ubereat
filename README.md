@@ -41,6 +41,7 @@ Issue
     <td>05-17</td>
     <td>05-19</td>
     <td>05-21</td>
+    <td>05-25</td>
   </tr>
   <tr>
     <td>蔡方慈</td>
@@ -51,6 +52,7 @@ Issue
     <td></td>
     <td>#7</td>
     <td>#10</td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -63,6 +65,7 @@ Issue
     <td>#10,#11</td>
     <td>#12</td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>曾凱翎</td>
@@ -74,12 +77,14 @@ Issue
     <td>#6</td>
     <td>#2</td>
     <td>#13,#14</td>
+    <td>#15</td>
   </tr>
   <tr>
     <td>鄧尊尼</td>
     <td>D0809324</td>
     <td>fcu-d0809324</td>
     <td>#4</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
