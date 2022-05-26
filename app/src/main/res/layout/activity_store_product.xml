@@ -27,7 +27,7 @@
     <ListView
         android:id="@+id/store_product_lv"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="500dp"
         android:layout_margin="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -41,6 +41,7 @@
         android:id="@+id/store_product_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:clickable="true"
         android:contentDescription="@string/app_name"
         android:hint="add"
@@ -55,7 +56,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/store_product_lv"
-        app:layout_constraintVertical_bias="0.888"
         app:maxImageSize="47dp"
         app:srcCompat="@drawable/plus" />
 
