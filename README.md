@@ -65,7 +65,7 @@ Issue
     <td>#10,#11</td>
     <td>#12</td>
     <td></td>
-    <td></td>
+    <td>22,23</td>
   </tr>
   <tr>
     <td>曾凱翎</td>
