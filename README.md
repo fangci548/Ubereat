@@ -118,8 +118,8 @@ Issue
     <td>D0845176</td>
     <td>D0845176</td>
     <td>#23</td>
-    <td>#24</td>
-    <td></td>
+    <td>#24,#25</td>
+    <td>#</td>
     <td></td>
     <td></td>
     <td></td>
