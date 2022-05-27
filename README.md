@@ -62,7 +62,7 @@ Issue
     <td>#9</td>
     <td>#10,#11</td>
     <td>#12</td>
-    <td></td>
+    <td>#22</td>
   </tr>
   <tr>
     <td>曾凱翎</td>
@@ -94,7 +94,7 @@ Issue
     <td>學號</td>
     <td>帳號</td>
     <td>05-25</td>
-    <td>05-</td>
+    <td>05-27</td>
     <td>06-</td>
     <td>06-</td>
     <td>06-</td>
@@ -117,8 +117,8 @@ Issue
     <td>陳怡秀</td>
     <td>D0845176</td>
     <td>D0845176</td>
-    <td>#22,#23</td>
-    <td></td>
+    <td>#23</td>
+    <td>#24</td>
     <td></td>
     <td></td>
     <td></td>
