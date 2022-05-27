@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name" translatable="false">MyLoginApp</string>
+    <string name="app_name" translatable="false">UberEats</string>
 
     <string name="facebook_app_id" translatable="false">548490073515240</string>
     <string name="fb_login_protocol_scheme" translatable="false">fb548490073515240</string>
     <string name="facebook_client_token" translatable="false">ce9126b12ce5ff4adfcf3bf8a446ac63</string>
-
-
+    <string name="member_search_hint" translatable="false">請輸入姓名或會員編號</string>
+    <string name="deliver_search_hint" translatable="false">請輸入姓名或工號</string>
 </resources>

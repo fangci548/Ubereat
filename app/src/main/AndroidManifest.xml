@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myloginapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".ManagerDeliverinfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ManagerManageDeliverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerMemberinfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerManageMemberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomShopCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".CustomMealActivity"
             android:exported="false" />
         <activity
@@ -22,19 +42,19 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".StoreProductActivity"
             android:exported="false" />
         <activity
-            android:name=".CustomeraccountActivity"
+            android:name=".CustomerAccountActivity"
             android:exported="false" />
         <activity
-            android:name=".StoreOwnerActivity"
+            android:name=".StoreMainActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".RoleChose"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

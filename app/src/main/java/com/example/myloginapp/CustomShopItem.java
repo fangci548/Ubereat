@@ -1,11 +1,11 @@
 package com.example.myloginapp;
 
-public class product {
+public class CustomShopItem {
     int image;
     String Name;
     String price;
 
-    public product(int image, String name, String price) {
+    public CustomShopItem(int image, String name, String price) {
         this.image = image;
         Name = name;
         this.price = price;
