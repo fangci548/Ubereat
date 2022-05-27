@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".ManagerManageDeliverActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManagerMemberinfoActivity"
             android:exported="true" />
         <activity

@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/drawable/myswitch_track.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_customeraccount.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_manager_manage_deliver.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_manager_manage_member.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_manager_memberinfo.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_promo.xml" value="0.19610507246376813" />
