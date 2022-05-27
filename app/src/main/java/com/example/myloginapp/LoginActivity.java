@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -24,11 +25,14 @@ public class LoginActivity extends AppCompatActivity
     Intent intent;
     String role;
     TextView tv_role;
+    private SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        preferences = getPreferences (MODE_PRIVATE);
 
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
@@ -73,5 +77,27 @@ public class LoginActivity extends AppCompatActivity
         } else {
             Toast.makeText(this, "登入失敗", Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    protected void onPause() {
+
+        super.onPause();
+        String email = etEmail.getText().toString();
+        String password = etPassword.getText().toString();
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("EMAIL", email);
+        editor.putString("PASSWORD", password);
+        editor.commit();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String email = preferences.getString("EMAIL", "");
+        String password = preferences.getString("PASSWORD", "");
+        etEmail.setText (email);
+        etPassword.setText(password);
+
     }
 }
