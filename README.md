@@ -47,11 +47,11 @@ Issue
     <td>D0843530</td>
     <td>fcu-d0843530</td>
     <td>#1</td>
-    <td></td>
-    <td></td>
     <td>#7</td>
     <td>#10</td>
-    <td></td>
+    <td>#27</td>
+    <td>#28</td>
+    <td>#31</td>
   </tr>
   <tr>
     <td>陳怡秀</td>
@@ -105,7 +105,7 @@ Issue
     <td>蔡方慈</td>
     <td>D0843530</td>
     <td>fcu-d0843530</td>
-    <td></td>
+    <td>#31</td>
     <td></td>
     <td></td>
     <td></td>
