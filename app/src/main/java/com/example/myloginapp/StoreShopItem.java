@@ -28,7 +28,7 @@ public class StoreShopItem {
     }
 
     public void setName(String name) {
-        Name = name;
+        this.Name = name;
     }
 
     public String getPrice() {

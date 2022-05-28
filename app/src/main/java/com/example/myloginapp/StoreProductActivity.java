@@ -43,11 +43,11 @@ public class StoreProductActivity extends AppCompatActivity {
     myDatabase.execSQL(createDbSql);
     listView = findViewById(R.id.store_product_lv);
 
-    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","$30","好吃蛋餅"));
-    arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","$50","肥美豬肉蛋堡"));
-    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","$40","酥炸薯條"));
+    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
+    arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","50","肥美豬肉蛋堡"));
+    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
 
-    productAdapter = new StoreShopItemAdapter(this,R.layout.customer_shop,arrayList);
+    productAdapter = new StoreShopItemAdapter(this,R.layout.store_product_layout,arrayList);
 
     listView.setAdapter(productAdapter);
 
@@ -94,7 +94,7 @@ public class StoreProductActivity extends AppCompatActivity {
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
         arrayList.get(index).setName(na);
-        arrayList.get(index).setPrice(pr);
+        arrayList.get(index).setPrice("$" + pr);
         arrayList.get(index).setDescription(de);
         productAdapter.notifyDataSetChanged();
       }

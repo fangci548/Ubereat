@@ -41,4 +41,10 @@ public class StoreProductEdit extends AppCompatActivity {
 		setResult(RESULT_OK,it2);
 		finish();
 	}
+
+  public void onBack(View v) {
+
+    setResult(RESULT_CANCELED);
+    finish();
+  }
 }

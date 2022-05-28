@@ -24,7 +24,7 @@
             android:exported="false" />
         <activity
             android:name=".ManagerMemberinfoActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ManagerManageMemberActivity"
             android:exported="false" />
@@ -57,9 +57,6 @@
             android:exported="false" />
         <activity
             android:name=".StoreMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreNewProductActivity"
             android:exported="false" />
         <activity
             android:name=".StoreOrderAcceptDetActivity"

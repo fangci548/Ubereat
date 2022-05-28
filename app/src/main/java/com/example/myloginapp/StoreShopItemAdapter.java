@@ -45,7 +45,7 @@ public class StoreShopItemAdapter extends ArrayAdapter<StoreShopItem> {
         TextView itemDescription = itemLayout.findViewById(R.id.store_product_des);
         imageView.setImageResource(item.getImage());
         itemName.setText(item.getName());
-        itemPrice.setText(item.getPrice());
+        itemPrice.setText("$" + item.getPrice());
         itemDescription.setText(item.getDescription());
 
         return itemLayout;
