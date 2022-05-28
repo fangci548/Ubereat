@@ -94,6 +94,7 @@ Issue
     <td>學號</td>
     <td>帳號</td>
     <td>05-25</td>
+    <td>05-26</td>
     <td>05-27</td>
     <td>05-28</td>
     <td>05-29</td>
@@ -112,6 +113,7 @@ Issue
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>陳怡秀</td>
@@ -119,8 +121,9 @@ Issue
     <td>D0845176</td>
     <td>#25,#36</td>
     <td>#37,#38</td>
-    <td>#39,#40,#41</td>
-    <td>#42,#43</td>
+    <td>#39,#40,</td>
+    <td>#41,#42</td>
+    <td>#43</td>
     <td></td>
     <td></td>
     <td></td>
@@ -136,11 +139,13 @@ Issue
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>鄧尊尼</td>
     <td>D0809324</td>
     <td>fcu-d0809324</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
