@@ -11,7 +11,7 @@ public class RoleChose extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_role_chose);
+		setContentView(R.layout.role_chose);
 	}
 
 	public void goToCustomer(View v){

@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainAdapter extends BaseAdapter {
+public class CustomMainAdapter extends BaseAdapter {
 
     private Context context;
     private LayoutInflater inflater;
@@ -19,7 +19,7 @@ public class MainAdapter extends BaseAdapter {
     private String[] shopStar;
 
 
-    public MainAdapter(Context context, String[] shopName, int[] shopImage, String[] fee, String[] time, String[] star) {
+    public CustomMainAdapter(Context context, String[] shopName, int[] shopImage, String[] fee, String[] time, String[] star) {
         this.context = context;
         this.shopName = shopName;
         this.shopImage = shopImage;

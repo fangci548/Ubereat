@@ -34,7 +34,7 @@ public class CustomMainActivity extends AppCompatActivity {
         } else {
             gridview = findViewById(R.id.gridview);
 
-            MainAdapter adapter = new MainAdapter(CustomMainActivity.this,shopName,numberImage,fee,time,star);
+            CustomMainAdapter adapter = new CustomMainAdapter(CustomMainActivity.this,shopName,numberImage,fee,time,star);
             gridview.setAdapter(adapter);
         }
 
