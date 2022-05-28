@@ -15,7 +15,8 @@
         android:layout_marginRight="16dp"
         android:layout_weight="1"
         android:scaleType="centerCrop"
-        android:src="@drawable/kfc" />
+        android:src="@drawable/kfc"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,20 +30,21 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="TextView"
+            android:text="@string/textview"
             android:textSize="24sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/btn_star_big_on" />
+            android:src="@android:drawable/btn_star_big_on"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/shop_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Star"
+            android:text="@string/star"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -58,7 +60,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Fee"
+            android:text="@string/fee"
             android:textSize="18sp" />
 
         <TextView
@@ -66,14 +68,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="TWD費用"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/delivery_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:text="00-00"
+            android:text="@string/minute"
             android:textSize="18sp" />
 
         <TextView
@@ -81,7 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="分鐘"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 </LinearLayout>

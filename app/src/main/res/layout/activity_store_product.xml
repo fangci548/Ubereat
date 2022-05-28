@@ -8,7 +8,7 @@
     tools:context=".StoreProductActivity">
 
     <SearchView
-        android:id="@+id/store_product_serch"
+        android:id="@+id/store_product_search"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -34,7 +34,7 @@
         app:layout_constraintBottom_toTopOf="@+id/store_product_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/store_product_serch">
+        app:layout_constraintTop_toBottomOf="@+id/store_product_search">
 
     </ListView>
 

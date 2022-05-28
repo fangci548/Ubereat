@@ -16,15 +16,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="為您推薦"
+            android:scrollbars="vertical"
+            android:text="@string/recommend"
             android:textColor="@color/black"
-            android:textSize="25sp"
-            android:scrollbars="vertical"/>
+            android:textSize="25sp" />
 
         <GridView
             android:id="@+id/gridview"
             android:layout_width="match_parent"
-            android:layout_height="675dp" />
+            android:layout_height="675dp"
+            tools:ignore="NestedScrolling" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigation"

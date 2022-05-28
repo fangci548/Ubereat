@@ -19,4 +19,17 @@
     <string name="menu_gallery">外送員管理中心</string>
     <string name="menu_slideshow">登出</string>
     <string name="title_activity_manager_draw">ManagerDrawActivity</string>
+    <string name="login">登入</string>
+    <string name="email">帳號(電子郵件)</string>
+    <string name="password">密碼</string>
+    <string name="register">註冊</string>
+    <string name="login_des">登入後繼續</string>
+    <string name="phone_number">手機號碼</string>
+    <string name="cancel">取消</string>
+    <string name="register_des">註冊以繼續</string>
+    <string name="recommend">為您推薦</string>
+    <string name="textview">TextView</string>
+    <string name="star">Star</string>
+    <string name="fee">Fee</string>
+    <string name="minute">00-00</string>
 </resources>

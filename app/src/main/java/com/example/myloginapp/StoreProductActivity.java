@@ -3,7 +3,9 @@ package com.example.myloginapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -24,15 +26,22 @@ public class StoreProductActivity extends AppCompatActivity {
   ArrayList<StoreShopItem> arrayList = new ArrayList<>();
   StoreShopItemAdapter productAdapter;
   final int ADD_REQUEST = 100;
+  private final static String DB_NAME = "UberEat";
+  private final static String TABLE_NAME = "product";
+  private SQLiteDatabase myDatabase;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_store_product);
 
+    myDatabase = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
+    String createDbSql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME +
+            "(NAME VARCHAR(30),"+
+            "PRICE VARCHAR(16),"+
+            "DES VARCHAR(100) )"; // 還有一個photo
+    myDatabase.execSQL(createDbSql);
     listView = findViewById(R.id.store_product_lv);
-
-
 
     arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","$30","好吃蛋餅"));
     arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","$50","肥美豬肉蛋堡"));
