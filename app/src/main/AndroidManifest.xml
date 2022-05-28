@@ -12,16 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".ManagerDrawActivity"
+            android:exported="true"
+            android:label="@string/title_activity_manager_draw"
+            android:theme="@style/Theme.MyLoginApp.NoActionBar" />
+        <activity
+            android:name=".ManagerDeliverinfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerManageDeliverActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManagerMemberinfoActivity"
             android:exported="true" />
         <activity
             android:name=".ManagerManageMemberActivity"
             android:exported="false" />
         <activity
-            android:name=".CustomShopCartActivity"
+            android:name=".CustomerAccountActivity"
             android:exported="false" />
         <activity
             android:name=".CustomItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomItemList"
             android:exported="false" />
         <activity
             android:name=".CustomMainActivity"
@@ -30,7 +44,7 @@
             android:name=".CustomMealActivity"
             android:exported="false" />
         <activity
-            android:name=".CustomItemList"
+            android:name=".CustomShopCartActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
@@ -39,13 +53,28 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".StoreProductActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CustomerAccountActivity"
+            android:name=".StoreAccount"
             android:exported="false" />
         <activity
             android:name=".StoreMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreNewProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOrderAcceptDetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOrderCompleteDetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreProductAdd"
+            android:exported="false" />
+        <activity
+            android:name=".StoreProductEdit"
             android:exported="false" />
         <activity
             android:name=".RoleChose"
