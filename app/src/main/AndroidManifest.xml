@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".StoreNewProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManagerDrawActivity"
             android:exported="true"
             android:label="@string/title_activity_manager_draw"
