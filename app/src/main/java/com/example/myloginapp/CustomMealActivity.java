@@ -26,7 +26,7 @@ public class CustomMealActivity extends AppCompatActivity {
 
         arrayList.add(new CustomShopItem(R.drawable.food,"蛋餅","$30"));
         arrayList.add(new CustomShopItem(R.drawable.food,"豬肉蛋堡","$50"));
-        arrayList.add(new CustomShopItem(R.drawable.maxico,"薯條","$40"));
+        arrayList.add(new CustomShopItem(R.drawable.mexico,"薯條","$40"));
 
         CustomShopItemAdapter productAdapter = new CustomShopItemAdapter(this,R.layout.customer_shop,arrayList);
 
