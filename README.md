@@ -95,7 +95,7 @@ Issue
     <td>帳號</td>
     <td>05-25</td>
     <td>05-27</td>
-    <td>06-</td>
+    <td>05-28</td>
     <td>06-</td>
     <td>06-</td>
     <td>06-</td>
