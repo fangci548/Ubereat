@@ -56,16 +56,16 @@ public class LoginActivity extends AppCompatActivity
     public void onComplete(@NonNull Task<AuthResult> task) {
         if (task.isSuccessful()) {
             Toast.makeText(this, "登入成功", Toast.LENGTH_LONG).show();
-            MainActivity.VALID_USER = true;
+            CustomMainActivity.VALID_USER = true;
             Intent intent = new Intent();
             if(role.equals("customer")){
-                intent.setClass(this, MainActivity.class);
+                intent.setClass(this, CustomMainActivity.class);
             }
             else if (role.equals("store")){ //!未改
                 intent.setClass(this, StoreProductActivity.class);
             }
             else{ //deliver !未改
-                intent.setClass(this, MainActivity.class);
+                intent.setClass(this, CustomMainActivity.class);
             }
             //intent.setClass(this, MainActivity.class);
             startActivity(intent);
