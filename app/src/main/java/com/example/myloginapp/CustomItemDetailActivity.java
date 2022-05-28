@@ -24,7 +24,7 @@ public class CustomItemDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.custom_item_detail);
+        setContentView(R.layout.customer_item_detail);
         initUI();           //初始化控制元件
 
         mCB1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

@@ -9,10 +9,10 @@
         android:icon="@drawable/icon_search"
         android:id="@+id/search"
         />
-    <item android:title="購物車"
+    <item
         android:id="@+id/shopcart"
         android:icon="@drawable/shopcart"
-        />
+        android:title="購物車" />
     <item android:title="帳戶"
         android:id="@+id/account"
         android:icon="@drawable/store_menu_account"
