@@ -12,8 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".ManagerDrawActivity"
+            android:exported="true"
+            android:label="@string/title_activity_manager_draw"
+            android:theme="@style/Theme.MyLoginApp.NoActionBar" />
+        <activity
             android:name=".ManagerDeliverinfoActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ManagerManageDeliverActivity"
             android:exported="false" />

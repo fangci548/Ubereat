@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/member"
+            android:checked="true"
+            android:title="會員管理中心" />
+        <item
+            android:id="@+id/deliver"
+            android:title="外送員管理中心"/>
+        <item
+            android:id="@+id/logout"
+            android:title="登出"/>
+    </group>
+</menu>
