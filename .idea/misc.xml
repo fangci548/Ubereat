@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/drawable/background_color.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_custom_item_detail.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_role_chose.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_store_order_complete_det.xml" value="0.15925925925925927" />
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/activity_store_orderaccept_det.xml" value="0.15925925925925927" />
@@ -15,6 +16,8 @@
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/customer_shop_item.xml" value="0.4466666666666667" />
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/customer_shoplist.xml" value="0.1439814814814815" />
         <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/layout/store_orderdetail_layout.xml" value="0.15925925925925927" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/menu/customer_menu.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/1111/app/src/main/res/menu/store_menu.xml" value="0.15925925925925927" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_meal_activity.xml" value="0.1" />
