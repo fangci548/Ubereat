@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -19,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity
         implements OnCompleteListener<AuthResult> {
 
-    private SharedPreferences preferences;
     private EditText etEmail;//abc@gmail.com
     private EditText etPassword;//123456
     FirebaseAuth firebaseAuth;
@@ -39,7 +37,6 @@ public class LoginActivity extends AppCompatActivity
         role = intent.getStringExtra("Role");
         tv_role = findViewById(R.id.tv_role);
         tv_role.setText(role);
-        preferences = getPreferences(MODE_PRIVATE);
     }
 
     public void onLogin(View view) {
@@ -59,16 +56,16 @@ public class LoginActivity extends AppCompatActivity
     public void onComplete(@NonNull Task<AuthResult> task) {
         if (task.isSuccessful()) {
             Toast.makeText(this, "登入成功", Toast.LENGTH_LONG).show();
-            CustomMainActivity.VALID_USER = true;
+            MainActivity.VALID_USER = true;
             Intent intent = new Intent();
             if(role.equals("customer")){
-                intent.setClass(this, CustomMainActivity.class);
+                intent.setClass(this, MainActivity.class);
             }
             else if (role.equals("store")){ //!未改
                 intent.setClass(this, StoreProductActivity.class);
             }
             else{ //deliver !未改
-                intent.setClass(this, CustomMainActivity.class);
+                intent.setClass(this, MainActivity.class);
             }
             //intent.setClass(this, MainActivity.class);
             startActivity(intent);
@@ -76,23 +73,5 @@ public class LoginActivity extends AppCompatActivity
         } else {
             Toast.makeText(this, "登入失敗", Toast.LENGTH_LONG).show();
         }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        String email = etEmail.getText().toString();
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("EMAIL",email); // (onPause/onResume) Key要一樣
-        editor.commit(); // 要有這行才會寫入
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        String email = preferences.getString("EMAIL", "");
-        etEmail.setText(email);
     }
 }

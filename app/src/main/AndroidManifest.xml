@@ -12,22 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
-            android:name=".StoreNewProductActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ManagerDrawActivity"
-            android:exported="true"
-            android:label="@string/title_activity_manager_draw"
-            android:theme="@style/Theme.MyLoginApp.NoActionBar" />
-        <activity
-            android:name=".ManagerDeliverinfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ManagerManageDeliverActivity"
-            android:exported="false" />
-        <activity
             android:name=".ManagerMemberinfoActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ManagerManageMemberActivity"
             android:exported="false" />
