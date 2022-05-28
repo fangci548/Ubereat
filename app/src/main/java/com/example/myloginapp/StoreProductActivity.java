@@ -34,9 +34,9 @@ public class StoreProductActivity extends AppCompatActivity {
 
 
 
-    arrayList.add(new StoreShopItem(R.drawable.maxico,"蛋餅","$30","好吃蛋餅"));
+    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","$30","好吃蛋餅"));
     arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","$50","肥美豬肉蛋堡"));
-    arrayList.add(new StoreShopItem(R.drawable.maxico,"薯條","$40","酥炸薯條"));
+    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","$40","酥炸薯條"));
 
     productAdapter = new StoreShopItemAdapter(this,R.layout.customer_shop,arrayList);
 
@@ -75,7 +75,7 @@ public class StoreProductActivity extends AppCompatActivity {
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
-        arrayList.add(new StoreShopItem(R.drawable.maxico,na,pr,de));
+        arrayList.add(new StoreShopItem(R.drawable.mexico,na,pr,de));
         productAdapter.notifyDataSetChanged();
       }
     }

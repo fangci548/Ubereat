@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity
         implements OnCompleteListener<AuthResult> {
 
+    private SharedPreferences preferences;
     private EditText etEmail;//abc@gmail.com
     private EditText etPassword;//123456
     FirebaseAuth firebaseAuth;
@@ -30,6 +32,7 @@ public class LoginActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -37,6 +40,7 @@ public class LoginActivity extends AppCompatActivity
         role = intent.getStringExtra("Role");
         tv_role = findViewById(R.id.tv_role);
         tv_role.setText(role);
+        preferences = getPreferences(MODE_PRIVATE);
     }
 
     public void onLogin(View view) {
@@ -73,5 +77,23 @@ public class LoginActivity extends AppCompatActivity
         } else {
             Toast.makeText(this, "登入失敗", Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        String email = etEmail.getText().toString();
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("EMAIL",email); // (onPause/onResume) Key要一樣
+        editor.commit(); // 要有這行才會寫入
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        String email = preferences.getString("EMAIL", "");
+        etEmail.setText(email);
     }
 }
