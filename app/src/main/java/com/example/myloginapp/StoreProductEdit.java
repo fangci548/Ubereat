@@ -18,9 +18,9 @@ public class StoreProductEdit extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_store_product_edit);
 
-		tv_name = findViewById(R.id.tv_name);
-		tv_descrption = findViewById(R.id.tv_description);
-		tv_price = findViewById(R.id.tv_price);
+		tv_name = findViewById(R.id.et_name);
+		tv_descrption = findViewById(R.id.et_describe);
+		tv_price = findViewById(R.id.et_price);
 
 		Intent intent = getIntent();
 		tv_name.setText(intent.getStringExtra("NAME"));

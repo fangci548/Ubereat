@@ -282,7 +282,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/store_product_edit_tx"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="訂閱"
