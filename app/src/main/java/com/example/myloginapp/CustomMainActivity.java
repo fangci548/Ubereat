@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-public class MainActivity extends AppCompatActivity {
+public class CustomMainActivity extends AppCompatActivity {
 
     public static boolean VALID_USER = false;
     public static final String ALBUM_NO = "album_no";
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             gridview = findViewById(R.id.gridview);
 
-            MainAdapter adapter = new MainAdapter(MainActivity.this,shopName,numberImage,fee,time,star);
+            MainAdapter adapter = new MainAdapter(CustomMainActivity.this,shopName,numberImage,fee,time,star);
             gridview.setAdapter(adapter);
         }
 
@@ -42,10 +42,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, CustomMealActivity.class);
+                intent.setClass(CustomMainActivity.this, CustomMealActivity.class);
                 intent.putExtra(ALBUM_NO, i);
                 startActivity(intent);
             }
         });
+    }
+    public void HomeToCart(View v){
+        Intent intent = new Intent();
+        intent.setClass(this, CustomShopCartActivity.class);
+        startActivity(intent);
     }
 }

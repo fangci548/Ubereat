@@ -35,7 +35,7 @@
             android:name=".CustomItemDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CustomMainActivity"
             android:exported="false" />
         <activity
             android:name=".CustomMealActivity"

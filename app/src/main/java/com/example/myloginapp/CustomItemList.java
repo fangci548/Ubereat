@@ -11,9 +11,4 @@ public class CustomItemList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customer_shop);
     }
-
-//    public void jump(View view){
-//        Intent intent = new Intent(this,CustomMealActivity.class);
-//        startActivity(intent);
-//    }
 }

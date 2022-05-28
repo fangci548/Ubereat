@@ -9,6 +9,6 @@ public class CustomerAccountActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customeraccount);
+        setContentView(R.layout.customer_account);
     }
 }
