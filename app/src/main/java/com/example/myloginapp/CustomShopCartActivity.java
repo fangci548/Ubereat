@@ -21,7 +21,7 @@ public class CustomShopCartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customer_shop_cart);
 
-        customItemList=new CustomItemList(this);
+        //customItemList = new CustomItemList(this);
 
         intView();
     }

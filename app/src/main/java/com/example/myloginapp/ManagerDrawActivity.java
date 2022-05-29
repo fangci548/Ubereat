@@ -64,4 +64,5 @@ public class ManagerDrawActivity extends AppCompatActivity {
     return NavigationUI.navigateUp(navController, mAppBarConfiguration)
             || super.onSupportNavigateUp();
   }
+
 }

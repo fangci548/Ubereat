@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".StoreWaitOrderDetActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManagerDrawActivity"
             android:exported="true"
             android:label="@string/title_activity_manager_draw"
@@ -56,8 +59,8 @@
             android:name=".StoreAccount"
             android:exported="false" />
         <activity
-            android:name=".StoreMainActivity"
-            android:exported="false" />
+            android:name=".StoreComOrderActivity"
+            android:exported="true" />
         <activity
             android:name=".StoreOrderAcceptDetActivity"
             android:exported="false" />

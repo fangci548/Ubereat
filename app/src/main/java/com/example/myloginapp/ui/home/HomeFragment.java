@@ -73,4 +73,10 @@ public class HomeFragment extends Fragment {
     super.onDestroyView();
     binding = null;
   }
+
+  @Override
+  public void onStop() {
+    super.onStop();
+    arrayList.clear();
+  }//未測試
 }

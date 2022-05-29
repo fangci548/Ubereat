@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class StoreOrderCompleteDetActivity extends AppCompatActivity {
+public class StoreWaitOrderDetActivity extends AppCompatActivity {
 
   TextView mark;
   TextView num;
@@ -16,7 +16,7 @@ public class StoreOrderCompleteDetActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_store_order_complete_det);
+    setContentView(R.layout.activity_store_wait_order_det);
 
     mark = findViewById(R.id.orderdet_mark);
     num = findViewById(R.id.orderdet_num);
