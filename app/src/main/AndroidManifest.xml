@@ -12,11 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
+            android:name=".StoreNvActivity"
+            android:exported="true"
+            android:label="@string/title_activity_store_nv" />
+        <activity
             android:name=".StoreWaitOrderDetActivity"
             android:exported="false" />
         <activity
             android:name=".ManagerDrawActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_manager_draw"
             android:theme="@style/Theme.MyLoginApp.NoActionBar" />
         <activity
@@ -60,7 +64,7 @@
             android:exported="false" />
         <activity
             android:name=".StoreComOrderActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".StoreOrderAcceptDetActivity"
             android:exported="false" />
