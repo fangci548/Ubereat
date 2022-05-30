@@ -91,7 +91,6 @@ Issue
 <table>
   <tr>
     <td>姓名</td>
-    <td>學號</td>
     <td>帳號</td>
     <td>05-25</td>
     <td>05-26</td>
@@ -104,7 +103,6 @@ Issue
   </tr>
   <tr>
     <td>蔡方慈</td>
-    <td>D0843530</td>
     <td>fcu-d0843530</td>
     <td>#37</td>
     <td></td>
@@ -118,7 +116,6 @@ Issue
   <tr>
     <td>陳怡秀</td>
     <td>D0845176</td>
-    <td>D0845176</td>
     <td>#38,#39</td>
     <td>#40,#41,#42</td>
     <td>#43,#44,#45</td>
@@ -130,7 +127,6 @@ Issue
   </tr>
   <tr>
     <td>曾凱翎</td>
-    <td>D0813263</td>
     <td>fcu-d0813263</td>
     <td>#15</td>
     <td></td>
@@ -143,7 +139,6 @@ Issue
   </tr>
   <tr>
     <td>鄧尊尼</td>
-    <td>D0809324</td>
     <td>fcu-d0809324</td>
     <td></td>
     <td></td>
