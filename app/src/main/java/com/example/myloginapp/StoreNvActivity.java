@@ -18,12 +18,15 @@ public class StoreNvActivity extends AppCompatActivity {
   private AppBarConfiguration appBarConfiguration;
   private ActivityStoreNvBinding binding;
 
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     binding = ActivityStoreNvBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
+
+
 
     BottomNavigationView navView = findViewById(R.id.nav_view);
     // Passing each menu ID as a set of Ids because each

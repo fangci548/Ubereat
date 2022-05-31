@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity
                 intent.setClass(this, CustomMainActivity.class);
             }
             else if (role.equals("store")){ //!未改
-                intent.setClass(this, StoreNvActivity.class);
+                intent.setClass(this, StoreProductActivity.class);
             }
             else if (role.equals("manager")){
               intent.setClass(this, ManagerDrawActivity.class);

@@ -54,13 +54,13 @@ public class StoreComOrderActivity extends AppCompatActivity {
         intent.setClass(StoreComOrderActivity.this, StoreOrderAcceptDetActivity.class);
         if(opt == 1) {
           intent.setClass(StoreComOrderActivity.this, StoreWaitOrderDetActivity.class);
-          intent.setClass(StoreComOrderActivity.this, StoreOrderCompleteDetActivity.class);
+          intent.setClass(StoreComOrderActivity.this, StoreWaitOrderDetActivity.class);
           intent.putExtra("Mark", arrayList1.get(i).mark);
           intent.putExtra("Num", arrayList1.get(i).num);
           intent.putExtra("tTime", arrayList1.get(i).time);
         } else if(opt == 2) {
           intent.setClass(StoreComOrderActivity.this, StoreOrderAcceptDetActivity.class);
-          intent.setClass(StoreComOrderActivity.this, StoreOrderCompleteDetActivity.class);
+          intent.setClass(StoreComOrderActivity.this, StoreOrderAcceptDetActivity.class);
           intent.putExtra("Mark", arrayList2.get(i).mark);
           intent.putExtra("Num", arrayList2.get(i).num);
           intent.putExtra("tTime", arrayList2.get(i).time);
