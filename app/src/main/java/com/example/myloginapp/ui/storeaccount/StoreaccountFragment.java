@@ -19,8 +19,8 @@ public class StoreaccountFragment extends Fragment {
 
   public View onCreateView(@NonNull LayoutInflater inflater,
                            ViewGroup container, Bundle savedInstanceState) {
-    SlideshowViewModel storeaccountViewModel =
-            new ViewModelProvider(this).get(SlideshowViewModel.class);
+    StoreaccountViewModel storeaccountViewModel =
+            new ViewModelProvider(this).get(StoreaccountViewModel.class);
 
     binding = FragmentStoreAccountBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
