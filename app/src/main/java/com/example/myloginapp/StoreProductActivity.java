@@ -3,8 +3,10 @@ package com.example.myloginapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,13 +37,28 @@ public class StoreProductActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_store_product);
 
+    listView = findViewById(R.id.store_product_lv);
+
     myDatabase = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
     String createDbSql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME +
-            "(NAME VARCHAR(30),"+
+            "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"+
+            "NAME VARCHAR(30),"+
             "PRICE VARCHAR(16),"+
             "DES VARCHAR(100) )"; // 還有一個photo
     myDatabase.execSQL(createDbSql);
-    listView = findViewById(R.id.store_product_lv);
+    String querySQL = "SELECT * FROM " + TABLE_NAME;
+    Cursor cursor = myDatabase.rawQuery(querySQL, null);
+
+    if(cursor.getCount() == 0){
+      ContentValues v1 = addFriend("蛋餅","30","好吃蛋餅");
+      ContentValues v2 = addFriend("豬肉蛋堡","50","肥美豬肉蛋堡");
+      ContentValues v3 = addFriend("薯條","40","酥炸薯條");
+      myDatabase.insert(TABLE_NAME, null, v1);
+      myDatabase.insert(TABLE_NAME, null, v2);
+      myDatabase.insert(TABLE_NAME, null, v3);
+      //listView.setAdapter(myDatabase.getPath() + "\n" + myDatabase.getPageSize());
+      myDatabase.close();
+    }
 
     arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
     arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","50","肥美豬肉蛋堡"));
@@ -65,6 +82,14 @@ public class StoreProductActivity extends AppCompatActivity {
       }
     });
 
+  }
+
+  private ContentValues addFriend(String name, String price, String des){
+    ContentValues value = new ContentValues();
+    value.put("NAME", name);
+    value.put("PRICE", price);
+    value.put("DES", des);
+    return value;
   }
 
   public void addProduct(View v){

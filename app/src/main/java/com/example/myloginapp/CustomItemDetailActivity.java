@@ -11,7 +11,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
-public class CustomItemDetailActivity extends AppCompatActivity {
+public class CustomItemDetailActivity extends AppCompatActivity{
 
     public static final String ALBUM_NO = "album_no";
     CheckBox mCB1;          //用於顯示選項

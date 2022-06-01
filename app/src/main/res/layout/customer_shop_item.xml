@@ -25,7 +25,7 @@
             android:text="$30"
             android:textSize="18sp" />
         <TextView
-            android:id="@+id/store_product_des"
+            android:id="@+id/custom_store_product_des"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
