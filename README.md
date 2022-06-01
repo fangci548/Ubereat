@@ -97,9 +97,7 @@ Issue
     <td>05-27</td>
     <td>05-29</td>
     <td>05-31</td>
-    <td>06-</td>
-    <td>06-</td>
-    <td>06-</td>
+    <td>06-01</td>
   </tr>
   <tr>
     <td>蔡方慈</td>
@@ -109,9 +107,7 @@ Issue
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>#34,#52,#53</td>
   </tr>
   <tr>
     <td>陳怡秀</td>
@@ -122,8 +118,6 @@ Issue
     <td>#45,#46</td>
     <td>#47</td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>曾凱翎</td>
@@ -133,9 +127,7 @@ Issue
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>#34,#52,#53</td>
   </tr>
   <tr>
     <td>鄧尊尼</td>
@@ -144,8 +136,6 @@ Issue
     <td></td>
     <td></td>
     <td>#16</td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
   </tr>
