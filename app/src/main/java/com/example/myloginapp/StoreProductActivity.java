@@ -25,12 +25,15 @@ public class StoreProductActivity extends AppCompatActivity {
 
   ListView listView;
   int index;
+  int index_array;
   ArrayList<StoreShopItem> arrayList = new ArrayList<>();
   StoreShopItemAdapter productAdapter;
   final int ADD_REQUEST = 100;
   private final static String DB_NAME = "UberEat";
   private final static String TABLE_NAME = "product";
   private SQLiteDatabase myDatabase;
+  private Cursor cursor;
+  private String old_name;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +50,7 @@ public class StoreProductActivity extends AppCompatActivity {
             "DES VARCHAR(100) )"; // 還有一個photo
     myDatabase.execSQL(createDbSql);
     String querySQL = "SELECT * FROM " + TABLE_NAME;
-    Cursor cursor = myDatabase.rawQuery(querySQL, null);
+    cursor = myDatabase.rawQuery(querySQL, null);
 
     if(cursor.getCount() == 0){
       ContentValues v1 = addFriend("蛋餅","30","好吃蛋餅");
@@ -60,9 +63,18 @@ public class StoreProductActivity extends AppCompatActivity {
       myDatabase.close();
     }
 
-    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
-    arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","50","肥美豬肉蛋堡"));
-    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
+//    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
+//    arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","50","肥美豬肉蛋堡"));
+//    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
+    if(cursor.moveToFirst()){
+      do{
+
+        arrayList.add(new StoreShopItem(R.drawable.mexico,cursor.getString(1),cursor.getString(2),cursor.getString(3)));
+//        arrayList.add(new StoreShopItem(R.drawable.food,cursor.getString(0),"50","肥美豬肉蛋堡"));
+//        arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
+
+      }while (cursor.moveToNext());
+    }
 
     productAdapter = new StoreShopItemAdapter(this,R.layout.store_product_layout,arrayList);
 
@@ -71,7 +83,10 @@ public class StoreProductActivity extends AppCompatActivity {
     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        index = i;
+        index_array = i;
+        old_name = arrayList.get(i).Name;
+//        Cursor c = myDatabase.query(TABLE_NAME, null, "name='" + name + "'", null, null, null, null, null);
+
         Intent intent = new Intent();
         intent.setClass(StoreProductActivity.this, StoreProductEdit.class);
         intent.putExtra("NAME", arrayList.get(i).Name);
@@ -105,22 +120,35 @@ public class StoreProductActivity extends AppCompatActivity {
 
     if(requestCode == ADD_REQUEST){
 
-      if(resultCode == RESULT_OK){
+      if(resultCode == RESULT_OK){ //add
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
+        ContentValues v1 = addFriend(na,pr,de);
+        myDatabase.insert(TABLE_NAME, null, v1);
+        //arrayList.add(new StoreShopItem(R.drawable.mexico,na,pr,de));
+
         arrayList.add(new StoreShopItem(R.drawable.mexico,na,pr,de));
         productAdapter.notifyDataSetChanged();
+
+
       }
     }
-    else{ //adit
+    else{ //edit
       if(resultCode == RESULT_OK){
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
-        arrayList.get(index).setName(na);
-        arrayList.get(index).setPrice("$" + pr);
-        arrayList.get(index).setDescription(de);
+//        arrayList.get(index).setName(na);
+//        arrayList.get(index).setPrice("$" + pr);
+//        arrayList.get(index).setDescription(de);
+        ContentValues v1 = addFriend(na,pr,de);
+        int db;
+        db = myDatabase.update(TABLE_NAME,v1,"name='" + old_name + "'",null);
+
+        arrayList.get(index_array).Name = na;
+        arrayList.get(index_array).description = de;
+        arrayList.get(index_array).price = pr;
         productAdapter.notifyDataSetChanged();
       }
     }
