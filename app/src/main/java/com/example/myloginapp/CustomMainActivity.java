@@ -15,11 +15,11 @@ public class CustomMainActivity extends AppCompatActivity {
 
     GridView gridview;
 
-    String[] shopName = {"大苑子","麥當勞","必勝客","肯德基","可不可成熟紅茶","繼光香香雞"};
-    int [] numberImage = {R.drawable.dayung,R.drawable.mcdonald,R.drawable.pizzahut,R.drawable.kfc,R.drawable.kebuketea,R.drawable.jgchicken};
-    String[] fee = {"15.00","35.00","15.00","10.00","20.00","15.00"};
-    String[] time = {"5-10","20-30","10-15","5-10","25-30","15-25"};
-    String[] star = {"4.8","4.6","4.5","4.6","4.9","4.8"};
+    String[] shopName = {"麥味登早餐","大苑子","麥當勞","必勝客","肯德基","可不可成熟紅茶","繼光香香雞"};
+    int [] numberImage = {R.drawable.mwd,R.drawable.dayung,R.drawable.mcdonald,R.drawable.pizzahut,R.drawable.kfc,R.drawable.kebuketea,R.drawable.jgchicken};
+    String[] fee = {"20.00","15.00","35.00","15.00","10.00","20.00","15.00"};
+    String[] time = {"20-30","5-10","20-30","10-15","5-10","25-30","15-25"};
+    String[] star = {"4.5","4.8","4.6","4.5","4.6","4.9","4.8"};
 
 
     @Override
@@ -43,7 +43,7 @@ public class CustomMainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent();
                 intent.setClass(CustomMainActivity.this, CustomMealActivity.class);
-                intent.putExtra(ALBUM_NO, i);
+                intent.putExtra("STORE_NAME", shopName[i]);
                 startActivity(intent);
             }
         });

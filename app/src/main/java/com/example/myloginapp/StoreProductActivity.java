@@ -29,11 +29,13 @@ public class StoreProductActivity extends AppCompatActivity {
   ArrayList<StoreShopItem> arrayList = new ArrayList<>();
   StoreShopItemAdapter productAdapter;
   final int ADD_REQUEST = 100;
+  final int RESULT_DELETE = -3;
   private final static String DB_NAME = "UberEat";
   private final static String TABLE_NAME = "product";
   private SQLiteDatabase myDatabase;
   private Cursor cursor;
   private String old_name;
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -118,9 +120,9 @@ public class StoreProductActivity extends AppCompatActivity {
   protected void onActivityResult (int requestCode, int resultCode, Intent it){
     super.onActivityResult(requestCode, resultCode,it);
 
-    if(requestCode == ADD_REQUEST){
+    if(requestCode == ADD_REQUEST){//add
 
-      if(resultCode == RESULT_OK){ //add
+      if(resultCode == RESULT_OK){
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
@@ -134,8 +136,8 @@ public class StoreProductActivity extends AppCompatActivity {
 
       }
     }
-    else{ //edit
-      if(resultCode == RESULT_OK){
+    else{ //edit&delete
+      if(resultCode == RESULT_OK){ //edit
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
@@ -143,13 +145,17 @@ public class StoreProductActivity extends AppCompatActivity {
 //        arrayList.get(index).setPrice("$" + pr);
 //        arrayList.get(index).setDescription(de);
         ContentValues v1 = addFriend(na,pr,de);
-        int db;
-        db = myDatabase.update(TABLE_NAME,v1,"name='" + old_name + "'",null);
+        myDatabase.update(TABLE_NAME,v1,"name='" + old_name + "'",null);
 
         arrayList.get(index_array).Name = na;
         arrayList.get(index_array).description = de;
         arrayList.get(index_array).price = pr;
         productAdapter.notifyDataSetChanged();
+      }
+      else if(resultCode == RESULT_DELETE){
+        arrayList.remove(index_array);
+        productAdapter.notifyDataSetChanged();
+        myDatabase.delete(TABLE_NAME,"name='" + old_name + "'",null);
       }
     }
 
