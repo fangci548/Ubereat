@@ -21,7 +21,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
 
-public class StoreProductActivity extends AppCompatActivity {
+public class StoreproductFragment extends AppCompatActivity {
 
   ListView listView;
   int index;
@@ -90,7 +90,7 @@ public class StoreProductActivity extends AppCompatActivity {
 //        Cursor c = myDatabase.query(TABLE_NAME, null, "name='" + name + "'", null, null, null, null, null);
 
         Intent intent = new Intent();
-        intent.setClass(StoreProductActivity.this, StoreProductEdit.class);
+        intent.setClass(StoreproductFragment.this, StoreProductEdit.class);
         intent.putExtra("NAME", arrayList.get(i).Name);
         intent.putExtra("DES", arrayList.get(i).description);
         intent.putExtra("PRICE", arrayList.get(i).price);
@@ -111,7 +111,7 @@ public class StoreProductActivity extends AppCompatActivity {
 
   public void addProduct(View v){
     Intent intent = new Intent();
-    intent.setClass(StoreProductActivity.this, StoreProductAdd.class);
+    intent.setClass(StoreproductFragment.this, StoreProductAdd.class);
     startActivityForResult(intent,ADD_REQUEST);
 
   }
