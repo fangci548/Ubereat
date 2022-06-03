@@ -29,6 +29,7 @@ public class StorehomeFragment extends Fragment {
   ArrayList<StoreOrderItem> arrayList3 = new ArrayList<>();
   StoreOrderItemAdapter orderAdapter;
   int opt = 1;
+  int count1, count2, count3;
   Context context;
 
   public View onCreateView(@NonNull LayoutInflater inflater,
@@ -37,17 +38,25 @@ public class StorehomeFragment extends Fragment {
     View view = inflater.inflate(R.layout.fragment_store_home, container, false);
     listView = view.findViewById(R.id.store_main_lv);
 
-    arrayList1.add(new StoreOrderItem("#","358678","2022/02/30 13:00"));
-    arrayList1.add(new StoreOrderItem("#", "123456","2022/01/31 14:00"));
-    arrayList1.add(new StoreOrderItem("#","543256","2022/05/01 17:00"));
+    count1 = arrayList1.size();
+    count2 = arrayList2.size();
+    count3 = arrayList3.size();
 
-    arrayList2.add(new StoreOrderItem("#","222222","2022/02/30 13:00"));
-    arrayList2.add(new StoreOrderItem("#", "333333","2022/01/31 14:00"));
-    arrayList2.add(new StoreOrderItem("#","444444","2022/05/01 17:00"));
-
-    arrayList3.add(new StoreOrderItem("#","777777","2022/02/30 13:00"));
-    arrayList3.add(new StoreOrderItem("#", "685432","2022/01/31 14:00"));
-    arrayList3.add(new StoreOrderItem("#","234567","2022/05/01 17:00"));
+    if(count1 == 0) {
+      arrayList1.add(new StoreOrderItem("#", "358678", "2022/02/30 13:00"));
+      arrayList1.add(new StoreOrderItem("#", "123456", "2022/01/31 14:00"));
+      arrayList1.add(new StoreOrderItem("#", "543256", "2022/05/01 17:00"));
+    }
+    if(count2 == 0) {
+      arrayList2.add(new StoreOrderItem("#", "222222", "2022/02/30 13:00"));
+      arrayList2.add(new StoreOrderItem("#", "333333", "2022/01/31 14:00"));
+      arrayList2.add(new StoreOrderItem("#", "444444", "2022/05/01 17:00"));
+    }
+    if(count3 == 0) {
+      arrayList3.add(new StoreOrderItem("#","777777","2022/02/30 13:00"));
+      arrayList3.add(new StoreOrderItem("#", "685432","2022/01/31 14:00"));
+      arrayList3.add(new StoreOrderItem("#","234567","2022/05/01 17:00"));
+    }
 
     orderAdapter = new StoreOrderItemAdapter(context,R.layout.store_main_layout,arrayList1);
     listView.setAdapter(orderAdapter);

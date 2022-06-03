@@ -18,7 +18,6 @@ import com.example.myloginapp.ManagerMemberinfoActivity;
 import com.example.myloginapp.MemberItem;
 import com.example.myloginapp.MemberItemAdapter;
 import com.example.myloginapp.R;
-import com.example.myloginapp.StoreProductActivity;
 import com.example.myloginapp.StoreProductEdit;
 import com.example.myloginapp.databinding.FragmentHomeBinding;
 
