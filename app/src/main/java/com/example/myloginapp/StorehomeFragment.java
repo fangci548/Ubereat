@@ -86,9 +86,7 @@ public class StorehomeFragment extends Fragment {
           intent.putExtra("Num", arrayList3.get(i).num);
           intent.putExtra("tTime", arrayList3.get(i).time);
         }
-
         startActivityForResult(intent,i);
-
       }
     });
 

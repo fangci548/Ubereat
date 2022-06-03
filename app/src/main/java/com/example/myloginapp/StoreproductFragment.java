@@ -2,6 +2,7 @@ package com.example.myloginapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -10,18 +11,22 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.myloginapp.databinding.FragmentStoreProductBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
 
-public class StoreproductFragment extends AppCompatActivity {
+public class StoreproductFragment extends Fragment {
 
   ListView listView;
   int index;
@@ -35,16 +40,17 @@ public class StoreproductFragment extends AppCompatActivity {
   private SQLiteDatabase myDatabase;
   private Cursor cursor;
   private String old_name;
+  Context context;
 
-
+  private FragmentStoreProductBinding binding;
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_store_product);
+  public View onCreateView(@NonNull LayoutInflater inflater,
+                           ViewGroup container, Bundle savedInstanceState) {
+    context = container.getContext();
+    View view = inflater.inflate(R.layout.fragment_store_product, container, false);
+    listView = view.findViewById(R.id.store_product_lv);
 
-    listView = findViewById(R.id.store_product_lv);
-
-    myDatabase = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
+    myDatabase = getActivity().openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
     String createDbSql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME +
             "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"+
             "NAME VARCHAR(30),"+
@@ -70,15 +76,13 @@ public class StoreproductFragment extends AppCompatActivity {
 //    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
     if(cursor.moveToFirst()){
       do{
-
         arrayList.add(new StoreShopItem(R.drawable.mexico,cursor.getString(1),cursor.getString(2),cursor.getString(3)));
-//        arrayList.add(new StoreShopItem(R.drawable.food,cursor.getString(0),"50","肥美豬肉蛋堡"));
-//        arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
-
+        arrayList.add(new StoreShopItem(R.drawable.food,cursor.getString(0),"50","肥美豬肉蛋堡"));
+        arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
       }while (cursor.moveToNext());
     }
 
-    productAdapter = new StoreShopItemAdapter(this,R.layout.store_product_layout,arrayList);
+    productAdapter = new StoreShopItemAdapter(context,R.layout.store_product_layout,arrayList);
 
     listView.setAdapter(productAdapter);
 
@@ -90,7 +94,7 @@ public class StoreproductFragment extends AppCompatActivity {
 //        Cursor c = myDatabase.query(TABLE_NAME, null, "name='" + name + "'", null, null, null, null, null);
 
         Intent intent = new Intent();
-        intent.setClass(StoreproductFragment.this, StoreProductEdit.class);
+        intent.setClass(context, StoreProductEdit.class);
         intent.putExtra("NAME", arrayList.get(i).Name);
         intent.putExtra("DES", arrayList.get(i).description);
         intent.putExtra("PRICE", arrayList.get(i).price);
@@ -99,6 +103,14 @@ public class StoreproductFragment extends AppCompatActivity {
       }
     });
 
+    FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.store_floating);
+    fab.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        startActivity(new Intent(getActivity(), StoreProductAdd.class));
+      }
+    });
+    return view;
   }
 
   private ContentValues addFriend(String name, String price, String des){
@@ -111,18 +123,18 @@ public class StoreproductFragment extends AppCompatActivity {
 
   public void addProduct(View v){
     Intent intent = new Intent();
-    intent.setClass(StoreproductFragment.this, StoreProductAdd.class);
+    intent.setClass(context, StoreProductAdd.class);
     startActivityForResult(intent,ADD_REQUEST);
 
   }
 
   @Override
-  protected void onActivityResult (int requestCode, int resultCode, Intent it){
+  public void onActivityResult (int requestCode, int resultCode, Intent it){
     super.onActivityResult(requestCode, resultCode,it);
 
     if(requestCode == ADD_REQUEST){//add
 
-      if(resultCode == RESULT_OK){
+      if(resultCode == getActivity().RESULT_OK){
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
@@ -137,7 +149,7 @@ public class StoreproductFragment extends AppCompatActivity {
       }
     }
     else{ //edit&delete
-      if(resultCode == RESULT_OK){ //edit
+      if(resultCode == getActivity().RESULT_OK){ //edit
         String na = it.getStringExtra("NAME");
         String pr = it.getStringExtra("PRICE");
         String de = it.getStringExtra("DES");
@@ -158,10 +170,6 @@ public class StoreproductFragment extends AppCompatActivity {
         myDatabase.delete(TABLE_NAME,"name='" + old_name + "'",null);
       }
     }
-
-
   }
-
-
 
 }
