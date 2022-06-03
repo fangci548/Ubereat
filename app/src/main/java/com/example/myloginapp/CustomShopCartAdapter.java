@@ -1,92 +1,49 @@
 package com.example.myloginapp;
 
 import android.content.Context;
-import android.database.DataSetObserver;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListAdapter;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class CustomShopCartAdapter implements ListAdapter {
+import androidx.annotation.NonNull;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomShopCartAdapter extends ArrayAdapter<CustomShopCartItem> {
     private Context context;
-    private String[] itemName;
-    private String[] itemPrice;
     private LayoutInflater inflater;
+    private List<CustomShopCartItem> products;
 
-    public CustomShopCartAdapter(Context context, String[] itemName, String[] itemPrice) {
+    public CustomShopCartAdapter(@NonNull Context context, int resource, @NonNull ArrayList<CustomShopCartItem> products) {
+        super(context, resource, products);
         this.context = context;
-        this.itemName = itemName;
-        this.itemPrice = itemPrice;
-    }
-
-    @Override
-    public void registerDataSetObserver(DataSetObserver observer) {
-
-    }
-
-    @Override
-    public void unregisterDataSetObserver(DataSetObserver observer) {
-
-    }
-
-    @Override
-    public int getCount() {
-        return 0;
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return 0;
-    }
-
-    @Override
-    public boolean hasStableIds() {
-        return false;
+        this.products = products;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        if(inflater == null){
-            inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = LayoutInflater.from(this.context);
+        LinearLayout itemLayout = null;
+
+        if (convertView == null) {
+            itemLayout = (LinearLayout) inflater.inflate(R.layout.customer_shop_cart_list, null);
+        } else {
+            itemLayout = (LinearLayout) convertView;
         }
-        if(convertView == null){
-            convertView = inflater.inflate(R.layout.customer_shop,null);
-        }
-        TextView itemname = convertView.findViewById(R.id.itemName);
-        TextView itemprice = convertView.findViewById(R.id.itemPrice);
 
-        itemname.setText(itemName[position]);
-        itemprice.setText(itemPrice[position]);
-        return convertView;
-    }
+        CustomShopCartItem item = products.get(position);
 
-    @Override
-    public int getItemViewType(int position) {
-        return 0;
-    }
+        TextView itemname = itemLayout.findViewById(R.id.itemName);
+        TextView itemprice = itemLayout.findViewById(R.id.itemPrice);
+        TextView itemextra = itemLayout.findViewById(R.id.item_des);
+        itemname.setText(item.getItemName());
+        itemprice.setText(item.getItemPrice());
+        itemextra.setText(item.getItemExtra());
 
-    @Override
-    public int getViewTypeCount() {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
-
-    @Override
-    public boolean areAllItemsEnabled() {
-        return false;
-    }
-
-    @Override
-    public boolean isEnabled(int position) {
-        return false;
+        return itemLayout;
     }
 }

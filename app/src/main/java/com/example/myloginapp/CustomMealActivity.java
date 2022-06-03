@@ -23,6 +23,7 @@ public class CustomMealActivity extends AppCompatActivity {
     private SQLiteDatabase myDatabase;
     private Cursor cursor;
     private String storeName;
+    private String delPrice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class CustomMealActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         storeName = intent.getStringExtra("STORE_NAME");
+        delPrice = intent.getStringExtra("DEL_PRICE");
 
         listView = findViewById(R.id.listview);
         TextView tv_storename = findViewById(R.id.storeName);
@@ -60,7 +62,10 @@ public class CustomMealActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent();
                 intent.setClass(CustomMealActivity.this, CustomItemDetailActivity.class);
-                intent.putExtra(ALBUM_NO, i);
+                intent.putExtra("MEAL_NAME", arrayList.get(i).Name);
+                intent.putExtra("MEAL_PRICE", arrayList.get(i).price);
+                intent.putExtra("DEL_PRICE",delPrice);
+                intent.putExtra("STORE_NAME",storeName);
                 startActivity(intent);
             }
         });

@@ -9,8 +9,13 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_manager_manage_deliver.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_store_product.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/activity_store_product_edit.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_account.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_extra_item.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_item_detail.xml" value="0.10666666666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_main.xml" value="0.10666666666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_shop.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_shop_cart.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_shop_cart_list.xml" value="0.13055555555555556" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_shop_item.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/customer_shoplist.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Ubereat/app/src/main/res/layout/store_itemlist.xml" value="0.1" />
@@ -74,7 +79,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
