@@ -140,3 +140,27 @@ Issue
     <td></td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <td>姓名</td>
+    <td>06-03</td>
+    
+  </tr>
+  <tr>
+    <td>蔡方慈</td>
+    <td>#70~#72</td>
+  </tr>
+  <tr>
+    <td>陳怡秀</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>曾凱翎</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>鄧尊尼</td>
+    <td></td>
+  </tr>
+</table>
