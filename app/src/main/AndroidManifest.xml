@@ -63,19 +63,10 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".StoreAccount"
-            android:exported="false" />
-        <activity
-            android:name=".StoreComOrderActivity"
-            android:exported="true" />
-        <activity
             android:name=".StoreOrderAcceptDetActivity"
             android:exported="false" />
         <activity
             android:name=".StoreOrderCompleteDetActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreProductActivity"
             android:exported="false" />
         <activity
             android:name=".StoreProductAdd"

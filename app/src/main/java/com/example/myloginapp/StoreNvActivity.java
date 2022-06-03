@@ -1,42 +1,58 @@
 package com.example.myloginapp;
 
 import android.os.Bundle;
-import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.example.myloginapp.databinding.ActivityStoreNvBinding;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class StoreNvActivity extends AppCompatActivity {
 
-  private AppBarConfiguration appBarConfiguration;
-  private ActivityStoreNvBinding binding;
 
+  private ConstraintLayout constraintLayout;
+  private BottomNavigationView bottomNavigationView;
+  StorehomeFragment homeFragment = new StorehomeFragment();
+  StoreproductFragment productFragment = new StoreproductFragment();
+  StoreaccountFragment accountFragment = new StoreaccountFragment();
+  int bottomId;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_store_nv);
 
-    binding = ActivityStoreNvBinding.inflate(getLayoutInflater());
-    setContentView(binding.getRoot());
+    constraintLayout = findViewById(R.id.store_main);
+    bottomNavigationView = findViewById(R.id.nav_view);
+    bottomNavigationView.getMenu().getItem(0).setChecked(false);
+    getSupportFragmentManager().beginTransaction().replace(R.id.store_frame, productFragment).commit();
 
+    bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+      @Override
+      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-
-    BottomNavigationView navView = findViewById(R.id.nav_view);
-    // Passing each menu ID as a set of Ids because each
-    // menu should be considered as top level destinations.
-    appBarConfiguration = new AppBarConfiguration.Builder(
-            R.id.navigation_store_home, R.id.navigation_dashboard, R.id.navigation_notifications)
-            .build();
-    NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_store_nv);
-    NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-    NavigationUI.setupWithNavController(binding.navView, navController);
+        switch (item.getItemId()) {
+          case R.id.product:
+            bottomId = R.id.product;
+            getSupportFragmentManager().beginTransaction().replace(R.id.store_frame, productFragment).commit();
+            break;
+          case R.id.frontpage:
+            bottomId = R.id.frontpage;
+            getSupportFragmentManager().beginTransaction().replace(R.id.store_frame, homeFragment).commit();
+            break;
+          case R.id.account:
+            bottomId = R.id.account;
+            getSupportFragmentManager().beginTransaction().replace(R.id.store_frame, accountFragment).commit();
+            break;
+        }
+        return true;
+      }
+    });
   }
 
 

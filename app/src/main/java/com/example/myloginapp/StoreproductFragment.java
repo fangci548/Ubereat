@@ -62,7 +62,7 @@ public class StoreProductActivity extends AppCompatActivity {
       myDatabase.insert(TABLE_NAME, null, v2);
       myDatabase.insert(TABLE_NAME, null, v3);
       //listView.setAdapter(myDatabase.getPath() + "\n" + myDatabase.getPageSize());
-//      myDatabase.close();
+      myDatabase.close();
     }
 
 //    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
@@ -132,6 +132,8 @@ public class StoreProductActivity extends AppCompatActivity {
 
         arrayList.add(new StoreShopItem(R.drawable.mexico,na,pr,de));
         productAdapter.notifyDataSetChanged();
+
+
       }
     }
     else{ //edit&delete
@@ -156,6 +158,10 @@ public class StoreProductActivity extends AppCompatActivity {
         myDatabase.delete(TABLE_NAME,"name='" + old_name + "'",null);
       }
     }
+
+
   }
+
+
 
 }

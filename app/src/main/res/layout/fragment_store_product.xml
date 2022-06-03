@@ -5,7 +5,7 @@
     android:id="@+id/store_product_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.storeproduct.StoreproductFragment">
+    tools:context=".StoreproductFragment">
 
     <SearchView
         android:id="@+id/store_product_search"
@@ -27,11 +27,11 @@
     <ListView
         android:id="@+id/store_product_lv"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="500dp"
         android:layout_margin="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/store_product_add"
+        app:layout_constraintBottom_toTopOf="@+id/store_floating"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/store_product_search">
@@ -39,16 +39,16 @@
     </ListView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/store_product_add"
+        android:id="@+id/store_floating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:clickable="true"
         android:contentDescription="@string/app_name"
+        android:focusable="true"
         android:hint="add"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:onClick="addProduct"
         app:backgroundTint="#ffffff"
         app:borderWidth="0dp"
         app:elevation="0dp"
@@ -58,6 +58,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/store_product_lv"
+        app:layout_constraintVertical_bias="0.0"
         app:maxImageSize="47dp"
         app:srcCompat="@drawable/plus"
         tools:ignore="TouchTargetSizeCheck" />
