@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.storeaccount.StoreaccountFragment">
+    tools:context=".StoreaccountFragment">
 
     <LinearLayout
         android:id="@+id/store_layout1"
@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/store_img"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:layout_margin="25dp"
             android:layout_marginStart="16dp"
             app:srcCompat="@drawable/icon_headimg" />
@@ -30,7 +30,7 @@
             android:layout_marginTop="30dp"
             android:text="Ella Lin"
             android:textColor="#000000"
-            android:textSize="45sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -53,8 +53,8 @@
 
         <ImageView
             android:id="@+id/store_data"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_headphoto" />
 
@@ -87,8 +87,8 @@
 
         <ImageView
             android:id="@+id/store_heart"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_heart" />
 
@@ -121,8 +121,8 @@
 
         <ImageView
             android:id="@+id/store_card"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_card" />
 
@@ -155,8 +155,8 @@
 
         <ImageView
             android:id="@+id/store_set"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_set" />
 
@@ -189,8 +189,8 @@
 
         <ImageView
             android:id="@+id/store_mail"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_mail" />
 
@@ -223,8 +223,8 @@
 
         <ImageView
             android:id="@+id/store_que"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_mic" />
 
@@ -257,8 +257,8 @@
 
         <ImageView
             android:id="@+id/store_help"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_quemark" />
 
@@ -291,8 +291,8 @@
 
         <ImageView
             android:id="@+id/store_logout"
-            android:layout_width="37dp"
-            android:layout_height="45dp"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/icon_logout" />
 

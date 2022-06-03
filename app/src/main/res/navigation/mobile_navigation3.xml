@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_store_home"
-        android:name="com.example.myloginapp.ui.storehome.StorehomeFragment"
+        android:name="com.example.myloginapp.StorehomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_store_home" >
         <action
@@ -17,13 +17,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.myloginapp.ui.storeaccount.StoreaccountFragment"
+        android:name="com.example.myloginapp.StoreaccountFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_store_account" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.myloginapp.ui.storeproduct.StoreproductFragment"
+        android:name="com.example.myloginapp.StoreproductFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_store_product" >
         <action
