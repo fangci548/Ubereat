@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 public class CustomOrderCheck extends AppCompatActivity {
 
     ListView listView;
+    Spinner payMethod;
 
     ArrayList<CustomShopCartItem> arrayList = new ArrayList<>();
     TextView subtotalPrice; //小計
@@ -53,12 +55,15 @@ public class CustomOrderCheck extends AppCompatActivity {
         subtotalPrice = findViewById(R.id.subTotal);
         deliverPrice = findViewById(R.id.deliveryFee);
         totalPrice = findViewById(R.id.totalPay);
+        payMethod = findViewById(R.id.pay_spinner);
 
         String Name = intent.getStringExtra("MEAL_NAME");
         String Extra = intent.getStringExtra("MEAL_EXTRA");
         String Price = intent.getStringExtra("MEAL_PRICE");
         String storeName = intent.getStringExtra("STORE_NAME");
         price_del = intent.getStringExtra("DEL_PRICE");
+        String[] pay = getResources().getStringArray(R.array.pay_method);
+        int index = payMethod.getSelectedItemPosition();
         //deliverPrice.setText(price_del);
 
         ContentValues v1 = addMeal(storeName,Name,Price,Extra);
