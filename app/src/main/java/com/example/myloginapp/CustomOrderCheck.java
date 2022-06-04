@@ -15,8 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class CustomShopCartActivity extends AppCompatActivity {
-
+public class CustomOrderCheck extends AppCompatActivity {
 
     ListView listView;
 
@@ -34,23 +33,23 @@ public class CustomShopCartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.customer_shop_cart);
+        setContentView(R.layout.customer_order_check);
 
         myDatabase = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
 
         String createDbSql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME +
-            "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"+
-            "STORENAME VARCHAR(30),"+
-            "MEALNAME VARCHAR(30),"+
-            "PRICE VARCHAR(16),"+
-            "EXTRA VARCHAR(100) )";
+                "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"+
+                "STORENAME VARCHAR(30),"+
+                "MEALNAME VARCHAR(30),"+
+                "PRICE VARCHAR(16),"+
+                "EXTRA VARCHAR(100) )";
         myDatabase.execSQL(createDbSql);
         String querySQL = "SELECT * FROM " + TABLE_NAME;
         cursor = myDatabase.rawQuery(querySQL, null);
 
 
         Intent intent = getIntent();
-        listView = findViewById(R.id.shop_cart_lv);
+        listView = findViewById(R.id.customer_order_lv);
         subtotalPrice = findViewById(R.id.subTotal);
         deliverPrice = findViewById(R.id.deliveryFee);
         totalPrice = findViewById(R.id.totalPay);
@@ -60,7 +59,7 @@ public class CustomShopCartActivity extends AppCompatActivity {
         String Price = intent.getStringExtra("MEAL_PRICE");
         String storeName = intent.getStringExtra("STORE_NAME");
         price_del = intent.getStringExtra("DEL_PRICE");
-        deliverPrice.setText(price_del);
+        //deliverPrice.setText(price_del);
 
         ContentValues v1 = addMeal(storeName,Name,Price,Extra);
 
@@ -70,26 +69,12 @@ public class CustomShopCartActivity extends AppCompatActivity {
 
         if(cursor.moveToFirst()){
             do{
-
                 arrayList.add(new CustomShopCartItem(cursor.getString(2),cursor.getString(3),cursor.getString(4)));
-//        arrayList.add(new StoreShopItem(R.drawable.food,cursor.getString(0),"50","肥美豬肉蛋堡"));
-//        arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
-
             }while (cursor.moveToNext());
         }
-        CustomShopCartAdapter adapter = new CustomShopCartAdapter(CustomShopCartActivity.this ,R.layout.customer_shop_cart_list,arrayList);
+        CustomShopCartAdapter adapter = new CustomShopCartAdapter(this ,R.layout.customer_shop_cart_list,arrayList);
 
         listView.setAdapter(adapter);
-
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Intent intent = new Intent();
-//                intent.setClass(CustomShopCartActivity.this, CustomMealActivity.class);
-//                intent.putExtra(ALBUM_NO, i);
-//                startActivity(intent);
-//            }
-//        });
     }
 
     private ContentValues addMeal(String storeName,String mealName, String price, String extra){
@@ -101,9 +86,8 @@ public class CustomShopCartActivity extends AppCompatActivity {
         return value;
     }
 
-    public void goToOrder(View v){
-        Intent intent = new Intent();
-        intent.setClass(this, CustomOrderCheck.class);
-        startActivity(intent);
+    public void onBack(View v) {
+        setResult(RESULT_CANCELED);
+        finish();
     }
 }

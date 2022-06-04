@@ -28,7 +28,7 @@
         <ListView
             android:id="@+id/shop_cart_lv"
             android:layout_width="match_parent"
-            android:layout_height="393dp"
+            android:layout_height="480dp"
             android:scrollbars="none" />
 
         <LinearLayout
@@ -125,6 +125,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/rate_background"
             android:gravity="center"
+            android:onClick="goToOrder"
             android:text="@string/payment"
             android:textColor="@color/white"
             android:textSize="25sp"

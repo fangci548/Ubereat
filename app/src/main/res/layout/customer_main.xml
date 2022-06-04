@@ -19,7 +19,7 @@
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="703dp"
+        android:layout_height="675dp"
         tools:ignore="NestedScrolling" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

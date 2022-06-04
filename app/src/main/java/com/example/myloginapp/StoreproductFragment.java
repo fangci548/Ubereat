@@ -68,7 +68,7 @@ public class StoreproductFragment extends Fragment {
       myDatabase.insert(TABLE_NAME, null, v2);
       myDatabase.insert(TABLE_NAME, null, v3);
       //listView.setAdapter(myDatabase.getPath() + "\n" + myDatabase.getPageSize());
-      myDatabase.close();
+      //myDatabase.close();
     }
 
 //    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
