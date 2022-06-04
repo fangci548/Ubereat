@@ -157,7 +157,7 @@ Issue
   </tr>
   <tr>
     <td>曾凱翎</td>
-    <td></td>
+    <td>#76,#77</td>
   </tr>
   <tr>
     <td>鄧尊尼</td>
