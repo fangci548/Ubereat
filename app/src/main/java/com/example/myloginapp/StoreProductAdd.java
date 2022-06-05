@@ -39,4 +39,10 @@ public class StoreProductAdd extends AppCompatActivity {
     finish();
   }
 
+  public void onBack(View v) {
+
+    setResult(RESULT_CANCELED);
+    finish();
+  }
+
 }

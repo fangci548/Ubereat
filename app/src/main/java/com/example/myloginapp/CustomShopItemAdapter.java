@@ -43,10 +43,12 @@ public class CustomShopItemAdapter extends ArrayAdapter<CustomShopItem> {
         ImageView imageView = itemLayout.findViewById(R.id.custom_shop_item_pt);
         TextView itemName = itemLayout.findViewById(R.id.custom_shop_item_name);
         TextView itemPrice = itemLayout.findViewById(R.id.custom_shop_item_price);
+        TextView itemdes = itemLayout.findViewById(R.id.custom_store_product_des);
 
         imageView.setImageResource(item.getImage());
         itemName.setText(item.getName());
         itemPrice.setText(item.getPrice());
+        itemdes.setText(item.getDes());
 
         return itemLayout;
     }

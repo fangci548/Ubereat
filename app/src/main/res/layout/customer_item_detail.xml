@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
     android:orientation="vertical"
     tools:context=".CustomItemDetailActivity">
 
@@ -11,6 +13,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="230dp"
+        android:contentDescription="TODO"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/food"
@@ -18,8 +21,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_height="468dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="0dp"
         android:orientation="vertical">
 
         <TextView
@@ -39,7 +45,7 @@
             android:layout_height="wrap_content"
             android:text="$30"
             android:textColor="#191818"
-            android:textSize="20sp"
+            android:textSize="25sp"
             app:layout_constraintTop_toBottomOf="@+id/item_name"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="25dp" />
@@ -48,8 +54,8 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="加料"
+            android:layout_marginTop="24dp"
+            android:text="備註"
             android:textColor="#818080"
             android:textSize="28sp"
             app:layout_constraintStart_toStartOf="@+id/item_price"
@@ -58,8 +64,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
 
             <CheckBox
                 android:id="@+id/checkBox1"
@@ -69,13 +75,15 @@
                 android:text="熱狗"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
 
             <CheckBox
                 android:id="@+id/checkBox2"
@@ -85,23 +93,16 @@
                 android:text="玉米"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/checkBox1"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+                tools:visibility="visible" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="每項加$5.00"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
-                app:layout_constraintTop_toTopOf="@+id/checkBox2"
-                tools:layout_editor_absoluteX="329dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
 
             <CheckBox
                 android:id="@+id/checkBox3"
@@ -111,23 +112,16 @@
                 android:text="起司"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/checkBox2"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+                tools:visibility="visible" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="每項加$10.00"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/checkBox3"
-                app:layout_constraintTop_toTopOf="@+id/checkBox3"
-                tools:layout_editor_absoluteX="329dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
 
 
             <CheckBox
@@ -138,23 +132,16 @@
                 android:text="火腿"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/checkBox3"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+                tools:visibility="visible" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="每項加$10.00"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/checkBox4"
-                app:layout_constraintTop_toTopOf="@+id/checkBox4"
-                tools:layout_editor_absoluteX="329dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
 
             <CheckBox
                 android:id="@+id/checkBox5"
@@ -164,29 +151,23 @@
                 android:text="鮪魚肉鬆"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/checkBox4"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+                tools:visibility="visible" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="每項加$15.00"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
-                app:layout_constraintTop_toTopOf="@+id/checkBox5"
-                tools:layout_editor_absoluteX="329dp" />
         </LinearLayout>
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/meal_check"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        android:background="@color/black"
-        android:onClick="goToCart"
-        android:text="確認"
-        android:textColor="@color/white"
-        android:textSize="26dp" />
+        <Button
+            android:id="@+id/meal_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:minHeight="48dp"
+            android:onClick="goToCart"
+            android:text="確認"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+    </LinearLayout>
 
 </LinearLayout>

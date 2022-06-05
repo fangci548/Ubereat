@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class StoreShopItemAdapter extends ArrayAdapter<StoreShopItem> {
     private Context context;
@@ -42,10 +41,10 @@ public class StoreShopItemAdapter extends ArrayAdapter<StoreShopItem> {
         ImageView imageView = itemLayout.findViewById(R.id.store_product_img);
         TextView itemName = itemLayout.findViewById(R.id.store_product_name);
         TextView itemPrice = itemLayout.findViewById(R.id.store_product_price);
-        TextView itemDescription = itemLayout.findViewById(R.id.store_product_des);
+        TextView itemDescription = itemLayout.findViewById(R.id.custom_store_product_des);
         imageView.setImageResource(item.getImage());
         itemName.setText(item.getName());
-        itemPrice.setText(item.getPrice());
+        itemPrice.setText("$" + item.getPrice());
         itemDescription.setText(item.getDescription());
 
         return itemLayout;

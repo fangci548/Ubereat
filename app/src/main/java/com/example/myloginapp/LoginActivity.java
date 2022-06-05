@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myloginapp.ui.home.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -66,7 +67,10 @@ public class LoginActivity extends AppCompatActivity
                 intent.setClass(this, CustomMainActivity.class);
             }
             else if (role.equals("store")){ //!未改
-                intent.setClass(this, StoreProductActivity.class);
+                intent.setClass(this, StoreNvActivity.class);
+            }
+            else if (role.equals("manager")){
+              intent.setClass(this, ManagerDrawActivity.class);
             }
             else{ //deliver !未改
                 intent.setClass(this, CustomMainActivity.class);

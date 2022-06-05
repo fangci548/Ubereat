@@ -10,10 +10,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyLoginApp">
+        android:theme="@style/Theme.MyLoginApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".CustomOrderCheck"
+            android:exported="false" />
+        <activity
+            android:name=".StoreNvActivity"
+            android:exported="false"
+            android:label="@string/title_activity_store_nv"
+            android:theme="@style/Theme.MyLoginApp.NoActionBar" />
+        <activity
+            android:name=".StoreWaitOrderDetActivity"
+            android:exported="false" />
         <activity
             android:name=".ManagerDrawActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_manager_draw"
             android:theme="@style/Theme.MyLoginApp.NoActionBar" />
         <activity
@@ -24,7 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".ManagerMemberinfoActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ManagerManageMemberActivity"
             android:exported="false" />
@@ -53,22 +65,10 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".StoreAccount"
-            android:exported="false" />
-        <activity
-            android:name=".StoreMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreNewProductActivity"
-            android:exported="false" />
-        <activity
             android:name=".StoreOrderAcceptDetActivity"
             android:exported="false" />
         <activity
             android:name=".StoreOrderCompleteDetActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreProductActivity"
             android:exported="false" />
         <activity
             android:name=".StoreProductAdd"

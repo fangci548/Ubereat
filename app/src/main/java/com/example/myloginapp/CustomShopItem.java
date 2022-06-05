@@ -4,11 +4,13 @@ public class CustomShopItem {
     int image;
     String Name;
     String price;
+    String des;
 
-    public CustomShopItem(int image, String name, String price) {
+    public CustomShopItem(int image, String name, String price, String des) {
         this.image = image;
-        Name = name;
+        this.Name = name;
         this.price = price;
+        this.des = des;
     }
 
     public int getImage() {
@@ -33,5 +35,13 @@ public class CustomShopItem {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getDes() {
+        return des;
+    }
+
+    public void setDes(String des) {
+        this.des = des;
     }
 }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/store_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StorehomeFragment">
+
+    <Button
+        android:id="@+id/acceptbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onOption2"
+        android:text="已接訂單"
+        android:textColor="@color/use"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/waitbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onOption1"
+        android:text="待接訂單"
+        android:textColor="@color/use"
+        app:layout_constraintEnd_toStartOf="@+id/acceptbottom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/combottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onOption3"
+        android:text="訂單完成"
+        android:textColor="@color/use"
+        app:layout_constraintStart_toEndOf="@+id/acceptbottom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/store_main_lv"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptbottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

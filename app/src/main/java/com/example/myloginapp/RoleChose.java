@@ -32,4 +32,10 @@ public class RoleChose extends AppCompatActivity {
 		startActivity(intent);
 	}
 
+  public void goToManager(View v){
+    Intent intent = new Intent(this, LoginActivity.class);
+    intent.putExtra("Role", "manager");
+    startActivity(intent);
+  }
+
 }
