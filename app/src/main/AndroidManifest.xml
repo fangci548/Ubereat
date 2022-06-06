@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MyLoginApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".DeliveryOrderConfirm"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".CustomOrderCheck"
             android:exported="false" />
         <activity
