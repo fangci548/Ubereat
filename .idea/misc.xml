@@ -18,30 +18,52 @@
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_login.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_main.xml" value="0.275" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_manager.xml" value="0.275" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_manager_deliverinfo.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_manager_draw.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_manager_manage_deliver.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_manager_manage_member.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_manager_memberinfo.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_promo.xml" value="0.264" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_register.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_nv.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_order_complete_det.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_orderaccept_det.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_orderdet.xml" value="0.275" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_owner.xml" value="0.275" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_product.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_product_add.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_product_edit.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_store_wait_order_det.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/activity_storeaccount.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/app_bar_draw.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/content_draw.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_account.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_item_detail.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_main.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_order_check.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shop.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shop_cart.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shop_cart_list.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shop_item.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shoplist.xml" value="0.23596014492753623" />
-        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_pickup_select.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/deliver_order_confirm.xml" value="0.275" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/deliver_order_list.xml" value="0.2" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_main.xml" value="0.4" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_pickup_select.xml" value="0.25" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_gallery.xml" value="0.23233695652173914" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_home.xml" value="0.23233695652173914" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_slideshow.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_store_account.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_store_home.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_store_product.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/manager_deliverinfo_layout.xml" value="0.23233695652173914" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/manager_manage_member_layout.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/nav_header_draw.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/owner_itemlist.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/owner_main.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/role_chose.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/store_itemlist.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/store_main_layout.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/store_orderdetail_layout.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/store_product_layout.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/test.xml" value="0.275" />
@@ -67,5 +89,12 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4" />
+      </ProjectState>
+    </option>
   </component>
 </project>
