@@ -45,10 +45,10 @@
 
         <TextView
             android:id="@+id/textView25"
-            android:layout_width="60dp"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="訂單編號"
+            android:text="編號"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="22sp"
@@ -56,13 +56,13 @@
 
         <TextView
             android:id="@+id/textView26"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="店名"
-            android:textSize="22sp"
             android:textAlignment="center"
             android:textColor="@color/black"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <TextView
