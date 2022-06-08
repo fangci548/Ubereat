@@ -161,9 +161,9 @@ Issue
   <tr>
     <td>陳怡秀</td>
     <td>#65,#66</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>#76</td>
+    <td>#77</td>
+    <td>#78</td>
     <td></td
   </tr>
   <tr>
