@@ -146,25 +146,40 @@ Issue
     <td>姓名</td>
     <td>06-03</td>
     <td>06-06</td>
+    <td>06-08</td>
+    <td>06-09</td>
+    <td>06-10</td>
   </tr>
   <tr>
     <td>蔡方慈</td>
     <td>#70,#71,#72</td>
     <td>#79,#80</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>陳怡秀</td>
     <td>#65,#66</td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td></td
   </tr>
   <tr>
     <td>曾凱翎</td>
     <td>#76,#77</td>
     <td>#78</td>
+    <td>#</td>
+    <td></td>
+    <td></td
   </tr>
   <tr>
     <td>鄧尊尼</td>
     <td></td>
     <td>#4,#17,#18</td>
+    <td></td>
+    <td></td>
+    <td></td
   </tr>
 </table>
