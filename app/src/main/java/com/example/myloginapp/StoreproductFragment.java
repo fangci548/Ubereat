@@ -1,9 +1,15 @@
 package com.example.myloginapp;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
@@ -74,15 +80,17 @@ public class StoreproductFragment extends Fragment {
 //    arrayList.add(new StoreShopItem(R.drawable.mexico,"蛋餅","30","好吃蛋餅"));
 //    arrayList.add(new StoreShopItem(R.drawable.food,"豬肉蛋堡","50","肥美豬肉蛋堡"));
 //    arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
+    arrayList.clear();
     if(cursor.moveToFirst()){
       do{
+
         arrayList.add(new StoreShopItem(R.drawable.mexico,cursor.getString(1),cursor.getString(2),cursor.getString(3)));
-        arrayList.add(new StoreShopItem(R.drawable.food,cursor.getString(0),"50","肥美豬肉蛋堡"));
-        arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
+//        arrayList.add(new StoreShopItem(R.drawable.food,cursor.getString(0),"50","肥美豬肉蛋堡"));
+//        arrayList.add(new StoreShopItem(R.drawable.mexico,"薯條","40","酥炸薯條"));
       }while (cursor.moveToNext());
     }
 
-    productAdapter = new StoreShopItemAdapter(context,R.layout.store_product_layout,arrayList);
+    productAdapter = new StoreShopItemAdapter(context,R.layout.fragment_store_product,arrayList);
 
     listView.setAdapter(productAdapter);
 
@@ -92,7 +100,6 @@ public class StoreproductFragment extends Fragment {
         index_array = i;
         old_name = arrayList.get(i).Name;
 //        Cursor c = myDatabase.query(TABLE_NAME, null, "name='" + name + "'", null, null, null, null, null);
-
         Intent intent = new Intent();
         intent.setClass(context, StoreProductEdit.class);
         intent.putExtra("NAME", arrayList.get(i).Name);
@@ -107,7 +114,7 @@ public class StoreproductFragment extends Fragment {
     fab.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        startActivity(new Intent(getActivity(), StoreProductAdd.class));
+        startActivityForResult(new Intent(getActivity(), StoreProductAdd.class),ADD_REQUEST);
       }
     });
     return view;
@@ -121,12 +128,12 @@ public class StoreproductFragment extends Fragment {
     return value;
   }
 
-  public void addProduct(View v){
-    Intent intent = new Intent();
-    intent.setClass(context, StoreProductAdd.class);
-    startActivityForResult(intent,ADD_REQUEST);
-
-  }
+//  public void addProduct(View v){
+//    Intent intent = new Intent();
+//    intent.setClass(context, StoreProductAdd.class);
+//    getActivity().startActivityForResult(intent,ADD_REQUEST);
+//
+//  }
 
   @Override
   public void onActivityResult (int requestCode, int resultCode, Intent it){

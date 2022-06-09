@@ -27,7 +27,7 @@
     <ListView
         android:id="@+id/store_product_lv"
         android:layout_width="0dp"
-        android:layout_height="500dp"
+        android:layout_height="0dp"
         android:layout_margin="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"

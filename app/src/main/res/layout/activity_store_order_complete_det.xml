@@ -72,9 +72,9 @@
     <ListView
         android:id="@+id/orderdet_lv"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="350dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="16dp"
         android:minWidth="150dp"
         android:minHeight="150dp">
@@ -104,7 +104,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
-            android:text="TextView"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -144,21 +143,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_weight="0"
-            android:text="$100"
+            android:text="$110"
             android:textSize="18sp" />
     </LinearLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:background="#F0F0F0"
-        app:itemHorizontalTranslationEnabled="false"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/store_menu" />
 
 </LinearLayout>

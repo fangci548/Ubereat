@@ -48,14 +48,14 @@ public class StorehomeFragment extends Fragment {
       arrayList1.add(new StoreOrderItem("#", "543256", "2022/05/01 17:00"));
     }
     if(count2 == 0) {
-      arrayList2.add(new StoreOrderItem("#", "222222", "2022/02/30 13:00"));
-      arrayList2.add(new StoreOrderItem("#", "333333", "2022/01/31 14:00"));
-      arrayList2.add(new StoreOrderItem("#", "444444", "2022/05/01 17:00"));
+      arrayList2.add(new StoreOrderItem("#", "284659", "2022/02/30 13:00"));
+      arrayList2.add(new StoreOrderItem("#", "395732", "2022/01/31 14:00"));
+      arrayList2.add(new StoreOrderItem("#", "947382", "2022/05/01 17:00"));
     }
     if(count3 == 0) {
-      arrayList3.add(new StoreOrderItem("#","777777","2022/02/30 13:00"));
-      arrayList3.add(new StoreOrderItem("#", "685432","2022/01/31 14:00"));
-      arrayList3.add(new StoreOrderItem("#","234567","2022/05/01 17:00"));
+      arrayList3.add(new StoreOrderItem("#","482642","2022/02/30 13:00"));
+      arrayList3.add(new StoreOrderItem("#", "492745","2022/01/31 14:00"));
+      arrayList3.add(new StoreOrderItem("#","183653","2022/05/01 17:00"));
     }
 
     orderAdapter = new StoreOrderItemAdapter(context,R.layout.store_main_layout,arrayList1);

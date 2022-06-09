@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity
               intent.setClass(this, ManagerDrawActivity.class);
             }
             else{ //deliver !未改
-                intent.setClass(this, CustomMainActivity.class);
+                intent.setClass(this, DeliveryMainActivity.class);
             }
             //intent.setClass(this, MainActivity.class);
             startActivity(intent);

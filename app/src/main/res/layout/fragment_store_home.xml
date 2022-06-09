@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/acceptbottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
 
         android:layout_marginTop="24dp"
         android:background="@drawable/mybutton"
@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/waitbottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/mybutton"
@@ -38,8 +38,8 @@
 
     <Button
         android:id="@+id/combottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/mybutton"
@@ -54,6 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="515dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
