@@ -46,10 +46,15 @@
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shop_cart_list.xml" value="0.2427536231884058" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shop_item.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/customer_shoplist.xml" value="0.23596014492753623" />
-        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/deliver_order_confirm.xml" value="0.275" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/deliver_order_confirm.xml" value="0.264" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/deliver_order_list.xml" value="0.2" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_deliver_finish.xml" value="0.24365942028985507" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_feedback.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_main.xml" value="0.4" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_order_detail.xml" value="0.4" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_pickup_confirm.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/delivery_pickup_select.xml" value="0.25" />
+        <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_blank.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_gallery.xml" value="0.23233695652173914" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_home.xml" value="0.23233695652173914" />
         <entry key="..\:/Users/user/Desktop/Ubereat/app/src/main/res/layout/fragment_slideshow.xml" value="0.23233695652173914" />
