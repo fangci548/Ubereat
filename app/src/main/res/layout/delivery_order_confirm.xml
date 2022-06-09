@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="小傻瓜"
+                android:text="訂購人: 小傻瓜"
                 android:textColor="#151515"
                 android:textSize="24sp" />
 
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="西屯區文化路100號"
+                android:text="訂購人地址: 西屯區文化路100號"
                 android:textColor="#151515"
                 android:textSize="24sp" />
 
@@ -116,20 +116,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/shop_name"
+                android:id="@+id/order_shop_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="無敵炸物"
+                android:text="店家: 無敵炸物"
                 android:textColor="#151515"
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/shop_addr"
+                android:id="@+id/order_shop_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="上石路98號"
+                android:text="店家地址: 上石路98號"
                 android:textColor="#151515"
                 android:textSize="24sp" />
         </LinearLayout>
