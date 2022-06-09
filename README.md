@@ -50,8 +50,8 @@ Issue
     <td>#7</td>
     <td>#10</td>
     <td>#2</td>
-    <td>#28</td>
-    <td>#38</td>
+    <td>#27</td>
+    <td>#35</td>
   </tr>
   <tr>
     <td>陳怡秀</td>
@@ -101,13 +101,13 @@ Issue
   </tr>
   <tr>
     <td>蔡方慈</td>
-    <td>#37</td>
+    <td>#33</td>
+    <td></td>
+    <td>#34</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>#34,#52,#53</td>
-    <td>#57,#54,#55,#56</td>
+    <td>#31,#49,#50</td>
+    <td>#51,#52,#53,#54</td>
   </tr>
   <tr>
     <td>陳怡秀</td>
@@ -121,12 +121,12 @@ Issue
   </tr>
   <tr>
     <td>曾凱翎</td>
-    <td>#15</td>
+    <td>#16</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td>#34,#52,#53</td>
+    <td>#31,#49,#50</td>
     <td></td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ Issue
     <td></td>
     <td></td>
     <td></td>
-    <td>#16</td>
+    <td>#17</td>
     <td></td>
     <td></td>
     <td></td>
@@ -152,8 +152,8 @@ Issue
   </tr>
   <tr>
     <td>蔡方慈</td>
-    <td>#70,#71,#72</td>
-    <td>#79,#80</td>
+    <td>#55,#56,#57</td>
+    <td>#73,#74</td>
     <td></td>
     <td></td>
     <td></td>
@@ -168,16 +168,16 @@ Issue
   </tr>
   <tr>
     <td>曾凱翎</td>
-    <td>#76,#77</td>
-    <td>#78</td>
-    <td>#81</td>
+    <td>#72,#73</td>
+    <td>#70</td>
+    <td>#75</td>
     <td></td>
     <td></td
   </tr>
   <tr>
     <td>鄧尊尼</td>
     <td></td>
-    <td>#4,#17,#18</td>
+    <td>#4,#18,#19</td>
     <td></td>
     <td></td>
     <td></td
