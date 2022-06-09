@@ -2,7 +2,9 @@ package com.example.myloginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,12 +22,18 @@ public class CustomMainActivity extends AppCompatActivity {
     String[] fee = {"$20","$15","$35","$15","$10","$20","$15"};
     String[] time = {"20-30","5-10","20-30","10-15","5-10","25-30","15-25"};
     String[] star = {"4.5","4.8","4.6","4.5","4.6","4.9","4.8"};
-
+    private final static String DB_NAME = "UberEat";
+    private final static String TABLE_NAME = "cart";
+    private SQLiteDatabase myDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customer_main);
+
+        myDatabase = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
+        myDatabase.execSQL("delete from " + TABLE_NAME);
+
 
         if (!VALID_USER) {
             Intent intent = new Intent();
@@ -54,4 +62,5 @@ public class CustomMainActivity extends AppCompatActivity {
         intent.setClass(this, CustomShopCartActivity.class);
         startActivity(intent);
     }
+
 }

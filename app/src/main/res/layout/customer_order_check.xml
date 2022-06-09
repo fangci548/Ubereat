@@ -33,7 +33,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="500dp"
+        android:layout_height="470dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
@@ -63,7 +63,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="10dp"
                 android:text="13:00"
                 android:textColor="#151515"
@@ -79,20 +79,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/customer_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="訂購人: XXX"
-                android:textColor="#151515"
-                android:textSize="24sp" />
-
-            <TextView
                 android:id="@+id/customer_addr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="訂購人地址: XXX"
+                android:text="外送地址: XXX"
                 android:textColor="#151515"
                 android:textSize="24sp" />
 
@@ -129,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="店家地址: XXX"
+                android:text="地址: XXX"
                 android:textColor="#151515"
                 android:textSize="24sp" />
         </LinearLayout>
@@ -146,7 +137,7 @@
         <ListView
             android:id="@+id/customer_order_lv"
             android:layout_width="match_parent"
-            android:layout_height="265dp" />
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -176,7 +167,7 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="30dp"
                 android:text="外送費: "
                 android:textColor="#151515"
                 android:textSize="22sp"

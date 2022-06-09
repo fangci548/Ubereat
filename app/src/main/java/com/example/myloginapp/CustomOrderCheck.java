@@ -66,11 +66,9 @@ public class CustomOrderCheck extends AppCompatActivity {
         int index = payMethod.getSelectedItemPosition();
         //deliverPrice.setText(price_del);
 
-        ContentValues v1 = addMeal(storeName,Name,Price,Extra);
-
-        myDatabase.insert(TABLE_NAME, null, v1);
-        Log.v("namename", String.valueOf(v1));
-        Log.v("namename",String.valueOf("pp"));
+//        ContentValues v1 = addMeal(storeName,Name,Price,Extra);
+//
+//        myDatabase.insert(TABLE_NAME, null, v1);
 
         if(cursor.moveToFirst()){
             do{
@@ -81,15 +79,15 @@ public class CustomOrderCheck extends AppCompatActivity {
 
         listView.setAdapter(adapter);
     }
-
-    private ContentValues addMeal(String storeName,String mealName, String price, String extra){
-        ContentValues value = new ContentValues();
-        value.put("STORENAME",storeName);
-        value.put("MEALNAME", mealName);
-        value.put("PRICE", price);
-        value.put("EXTRA", extra);
-        return value;
-    }
+//
+//    private ContentValues addMeal(String storeName,String mealName, String price, String extra){
+//        ContentValues value = new ContentValues();
+//        value.put("STORENAME",storeName);
+//        value.put("MEALNAME", mealName);
+//        value.put("PRICE", price);
+//        value.put("EXTRA", extra);
+//        return value;
+//    }
 
     public void onBack(View v) {
         setResult(RESULT_CANCELED);

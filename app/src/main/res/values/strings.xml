@@ -29,6 +29,7 @@
     <string name="register_des">註冊以繼續</string>
     <string name="recommend">為您推薦</string>
     <string name="payment">結帳</string>
+    <string name="keep_shop">繼續點餐</string>
     <string name="textview">TextView</string>
     <string name="star">Star</string>
     <string name="fee">Fee</string>
